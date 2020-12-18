@@ -1,0 +1,41 @@
+spring:     # 配置不同的环境启动
+  application:
+      #name: service1 # 配置服务名称
+      name: service # 配置服务名称 配置负载均衡
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/login  # 配置i18n
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.72.81:8000/eureka/ #z
+      # 可以上报服务真实的健康状态
+    healthcheck:
+      enabled: true
+#  instance:
+#    #最后一次心跳时间后leaseExpirationDurationInSeconds秒就认为是下线了，默认是90秒
+#    lease-expiration-duration-in-seconds: 6
+#    #心跳间隔时间,默认是30秒
+#    lease-renewal-interval-in-seconds: 3
+management:
+  #可以远程关闭服务节点
+  endpoint:
+    shutdown:
+      enabled: true
+  #开启所有端点
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+person:
+  name: zhangsan
+  sex: nan
+  id: 1
+  likes:
+    - book
+    - play
+    - TV

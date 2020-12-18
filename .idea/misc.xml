@@ -7,6 +7,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/malixi-springboot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-shardingjdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server2/pom.xml" />
+        <option value="$PROJECT_DIR$/dispatcher_two/pom.xml" />
+        <option value="$PROJECT_DIR$/dispatcher_one/pom.xml" />
+        <option value="$PROJECT_DIR$/service2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

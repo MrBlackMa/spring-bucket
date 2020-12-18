@@ -7,8 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-shardingjdbc" />
+        <module name="dispatcher_one" />
         <module name="shareding-jdbc-nospring" />
         <module name="malixi-springboot" />
+        <module name="service2" />
+        <module name="eureka-server (1)" />
+        <module name="eureka-server" />
+        <module name="dispatcher_two" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +23,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dispatcher_one" options="-parameters" />
+      <module name="dispatcher_two" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server (1)" options="-parameters" />
       <module name="malixi-springboot" options="-parameters" />
+      <module name="service2" options="-parameters" />
       <module name="spring-shardingjdbc" options="-parameters" />
       <module name="springboot" options="-parameters" />
     </option>

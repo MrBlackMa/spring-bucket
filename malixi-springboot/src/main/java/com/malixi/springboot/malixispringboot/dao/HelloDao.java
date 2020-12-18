@@ -1,7 +1,6 @@
 package com.malixi.springboot.malixispringboot.dao;
 
 import com.malixi.springboot.malixispringboot.domain.Person;
-import org.springframework.data.redis.connection.ConnectionUtils;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

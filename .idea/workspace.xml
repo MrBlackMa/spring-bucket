@@ -3,8 +3,163 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="" />
+    <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/DispatcherOneApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/config/LoggingClientHttpRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestRestTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestRibbonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/test/java/com/malixi/spring/dispatcher_one/DispatcherOneApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/DispatcherOneApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/config/LoggingClientHttpRequestInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRestTemplateController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRibbonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/test-classes/com/malixi/spring/dispatcher_one/DispatcherOneApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/test/java/com/malixi/spring/dispatcher_two/DispatcherTwoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_two/target/test-classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/spring/malixi/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/src/main/java/com/spring/malixi/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/src/test/java/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/2020-12-18T18-12-29_433-jvmRun1.dump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server2/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/annotation/MyAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/annotation/MyAnnotationClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/DataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/DataSourceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/DynamicDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/DynamicDataSourceContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/druid/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/config/i18n/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/EmpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/HellowordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/entity/DataSourceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/eureka/HealthStatusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/controller/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/dao/IPersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/service/IPersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/ioc/service/impl/IPersonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/i18n/login.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/i18n/login_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/i18n/login_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/src/test/java/com/malixi/springboot/malixispringboot/DataApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotationClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSourceContextHolder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig$NativeLocaleResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/EmpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HellowordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/DataSourceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/eureka/HealthStatusService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/controller/PersonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/IPersonDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/IPersonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/impl/IPersonServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/DataApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/Service2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/controller/HellowordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/test/java/com/malixi/spring/service2/Service2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/Service2Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/HellowordController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/entity/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/target/test-classes/com/malixi/spring/service2/Service2ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/dao/HelloDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/dao/HelloDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/static/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/test/java/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/test/java/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/static/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/dao/HelloDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/dao/HelloDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +177,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -31,6 +189,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1kokCq4eCKvzxRK59rW1tPbzgOr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,14 +203,15 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-shardingjdbc/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service2/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -58,87 +220,116 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.malixi.spring.service2.entity" />
+      <recent name="com.malixi.spring.dispatcher_one.controller" />
+      <recent name="com.malixi.spring.service2.controller" />
       <recent name="com.malixi.spring.shardingjdbc.bean" />
       <recent name="com.malixi.spring.shardingjdbc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\spring-shardingjdbc\src\main\resources" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\service2\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\java\com\malixi\springboot\malixispringboot\config" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources\templates" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources\i18n" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringShardingjdbcApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.Service2Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MalixiSpringbootApplicationTests.contextLoads4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-shardingjdbc" />
+    <configuration name="DataApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="malixi-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.shardingjdbc.*" />
+          <option name="PATTERN" value="com.malixi.springboot.malixispringboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.spring.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.shardingjdbc.MalixiSpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads4" />
+      <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.DataApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MalixiSpringbootApplicationTests.contextLoads5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-shardingjdbc" />
+    <configuration name="MalixiSpringbootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="malixi-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.shardingjdbc.*" />
+          <option name="PATTERN" value="com.malixi.springboot.malixispringboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.spring.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.shardingjdbc.MalixiSpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads5" />
+      <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.MalixiSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MalixiSpringbootApplicationTests.contextLoads51" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-shardingjdbc" />
+    <configuration name="MalixiSpringbootApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="malixi-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.shardingjdbc.*" />
+          <option name="PATTERN" value="com.malixi.springboot.malixispringboot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.spring.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.shardingjdbc.MalixiSpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads51" />
+      <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.MalixiSpringbootApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MalixiSpringbootApplicationTests.contextLoads6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-shardingjdbc" />
+    <configuration name="DispatcherOneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dispatcher_one" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.dispatcher_one.DispatcherOneApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DispatcherTwoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dispatcher_two" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.dispatcher_two.DispatcherTwoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server (1)" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.shardingjdbc.*" />
+          <option name="PATTERN" value="com.spring.malixi.eurekaserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.spring.shardingjdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.shardingjdbc.MalixiSpringbootApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads6" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.malixi.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.malixi.eurekaserver.EurekaServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,6 +337,13 @@
     <configuration name="MalixiSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="malixi-springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.springboot.malixispringboot.MalixiSpringbootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Service2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.service2.Service2Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,11 +370,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
+        <item itemvalue="JUnit.DataApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.test" />
+        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.SpringShardingjdbcApplication" />
-        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads5" />
-        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads51" />
-        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads4" />
-        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads6" />
       </list>
     </recent_temporary>
   </component>
@@ -201,12 +399,39 @@
       <workItem from="1607432166091" duration="14000" />
       <workItem from="1607490484519" duration="26096000" />
       <workItem from="1607665229745" duration="282000" />
-      <workItem from="1607670420539" duration="2953000" />
+      <workItem from="1607670420539" duration="6633000" />
+      <workItem from="1607753623205" duration="28123000" />
+      <workItem from="1608112935185" duration="29960000" />
+      <workItem from="1608282557862" duration="20159000" />
     </task>
+    <task id="LOCAL-00001" summary="spring cloud 全家桶">
+      <created>1607673450364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607673450364</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring cloud 全家桶" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring cloud 全家桶" />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="0" key="#Project_Structure" timestamp="1606381676305">
@@ -217,10 +442,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1607589402285" />
-    <state x="446" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1607586186034">
+    <state x="446" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1608303860699">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="446" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1607586186034" />
+    <state x="446" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1608303860699" />
     <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607500555712">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -229,62 +454,66 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="371" y="127" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.760@0.0.1280.760" timestamp="1606478236609" />
-    <state width="450" height="466" key="DebuggerActiveHint" timestamp="1607499062551">
+    <state x="125" y="0" key="CommitChangelistDialog2" timestamp="1607673449624">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="450" height="466" key="DebuggerActiveHint/0.0.1280.760@0.0.1280.760" timestamp="1607499062551" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1607491224873">
+    <state x="125" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1607673449624" />
+    <state width="450" height="466" key="DebuggerActiveHint" timestamp="1607942967838">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1607491224873" />
-    <state width="1238" height="267" key="GridCell.Tab.0.bottom" timestamp="1607673348761">
+    <state width="450" height="466" key="DebuggerActiveHint/0.0.1280.760@0.0.1280.760" timestamp="1607942967838" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1608309414195">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.0.center" timestamp="1607673348761">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1608309414195" />
+    <state width="1238" height="294" key="GridCell.Tab.0.bottom" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.0.left" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.0.center" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.0.right" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.0.left" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.1.bottom" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.0.right" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.1.center" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.1.bottom" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.1.left" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.1.center" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="267" key="GridCell.Tab.1.right" timestamp="1607673348761">
+    <state width="1238" height="294" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.1.left" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="267" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1607673348761" />
-    <state width="1238" height="212" key="GridCell.Tab.2.bottom" timestamp="1607670852705">
+    <state width="1238" height="294" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.1.right" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1607670852705" />
-    <state width="1238" height="212" key="GridCell.Tab.2.center" timestamp="1607670852705">
+    <state width="1238" height="294" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.2.bottom" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1607670852705" />
-    <state width="1238" height="212" key="GridCell.Tab.2.left" timestamp="1607670852705">
+    <state width="1238" height="294" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.2.center" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1607670852705" />
-    <state width="1238" height="212" key="GridCell.Tab.2.right" timestamp="1607670852705">
+    <state width="1238" height="294" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.2.left" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1607670852705" />
+    <state width="1238" height="294" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="294" key="GridCell.Tab.2.right" timestamp="1608308579160">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1238" height="294" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
     <state x="221" y="115" key="IDE.errors.dialog" timestamp="1606401200139">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -293,25 +522,37 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="219" y="198" width="841" height="518" key="Registry/0.0.1280.760@0.0.1280.760" timestamp="1606379159291" />
-    <state x="142" y="25" key="SettingsEditor" timestamp="1607494340364">
+    <state x="301" y="82" key="RollbackChangesDialog" timestamp="1608218306383">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="142" y="25" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1607494340364" />
+    <state x="301" y="82" key="RollbackChangesDialog/0.0.1280.760@0.0.1280.760" timestamp="1608218306383" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1608214497798">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1608214497798" />
+    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1608309711334">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1608309711334" />
+    <state x="73" y="89" width="1093" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608218805725">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="73" y="89" width="1093" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.760@0.0.1280.760" timestamp="1608218805725" />
     <state x="607" y="224" width="596" height="536" key="find.popup" timestamp="1606381642434">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="607" y="224" width="596" height="536" key="find.popup/0.0.1280.760@0.0.1280.760" timestamp="1606381642434" />
-    <state x="6" y="0" key="new project wizard" timestamp="1607500532645">
+    <state x="14" y="50" key="new project wizard" timestamp="1608204736958">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="6" y="0" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1607500532645" />
-    <state x="300" y="173" width="672" height="677" key="run.anything.popup" timestamp="1607498431115">
+    <state x="14" y="50" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1608204736958" />
+    <state x="301" y="174" width="672" height="677" key="run.anything.popup" timestamp="1607763912573">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="300" y="173" width="672" height="677" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1607498431115" />
-    <state x="307" y="86" width="672" height="678" key="search.everywhere.popup" timestamp="1607501608609">
+    <state x="301" y="174" width="672" height="677" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1607763912573" />
+    <state x="206" y="453" width="672" height="678" key="search.everywhere.popup" timestamp="1608286109269">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="307" y="86" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1607501608609" />
+    <state x="206" y="453" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1608286109269" />
   </component>
 </project>
