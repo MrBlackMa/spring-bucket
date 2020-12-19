@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @version: 1.0
  */
 @RestController
-public class TestFeginController {
+public class TestFeignController {
 
 
 
@@ -71,4 +71,8 @@ public class TestFeginController {
     public String getOrderInfo() {
         return orderApiJar.getOrderInfo();
     }
+
+    /**
+     * 传递参数 feign
+     */
 }
