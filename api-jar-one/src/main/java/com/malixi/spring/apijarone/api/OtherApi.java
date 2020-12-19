@@ -1,7 +1,12 @@
 package com.malixi.spring.apijarone.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.Map;
 
 /**
  * @Auther: smile malixi
@@ -18,4 +23,23 @@ public interface OtherApi {
      */
     @GetMapping("/getOther")
     public String getOther();
+
+    /**
+     * 传递单个参数的
+     * @return
+     */
+    @GetMapping("/getOtherById")
+    public String getOtherById(@RequestParam String id);
+
+
+    /**
+     * 传递map
+     * @return
+     */
+    @GetMapping("/getOtherByMap")
+    public Map<String,Object> getOtherByMap(@RequestParam Map<String,Object> map);
+
+
+    @PostMapping("/getOtherByPost")
+    public Map<String,Object> getOtherByPost(@RequestParam Map<String,Object> map);
 }
