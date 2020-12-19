@@ -37,6 +37,7 @@
 		</dependency>
 	</dependencies>
 
+	<!--当父级项目依赖需要打包的时候 需要注释该插件 -->
 <!--	<build>-->
 <!--		<plugins>-->
 <!--			<plugin>-->

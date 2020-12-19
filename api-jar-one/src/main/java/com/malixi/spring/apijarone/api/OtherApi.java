@@ -40,6 +40,11 @@ public interface OtherApi {
     public Map<String,Object> getOtherByMap(@RequestParam Map<String,Object> map);
 
 
+    /**
+     * post请求传递map
+     * @param map
+     * @return
+     */
     @PostMapping("/getOtherByPost")
     public Map<String,Object> getOtherByPost(@RequestParam Map<String,Object> map);
 }

@@ -7,8 +7,12 @@ import com.malixi.spring.dispatcher_one.api.UserApiJar;
 import com.malixi.spring.dispatcher_one.api.UserRestApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 /**
  * @Auther: smile malixi
@@ -73,6 +77,31 @@ public class TestFeignController {
     }
 
     /**
-     * 传递参数 feign
+     * 传递参数 feign id
+     *
      */
+    @RequestMapping("/getOtherById")
+    public String getOtherById(@RequestParam String id){
+        return otherApiJar.getOtherById(id);
+    }
+
+    /**
+     * 传递map
+     * @return
+     */
+    @GetMapping("/getOtherByMap")
+    public Map<String,Object> getOtherByMap(@RequestParam Map<String,Object> map){
+        return otherApiJar.getOtherByMap(map);
+    }
+
+
+    /**
+     * post请求传递map
+     * @param map
+     * @return
+     */
+    @RequestMapping("/getOtherByPost")
+    public Map<String,Object> getOtherByPost(@RequestParam Map<String,Object> map){
+        return otherApiJar.getOtherByPost(map);
+    }
 }

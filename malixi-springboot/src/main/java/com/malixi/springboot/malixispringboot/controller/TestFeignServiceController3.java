@@ -18,7 +18,8 @@ public class TestFeignServiceController3 implements OtherApi {
     }
 
     @Override
-    public String getOtherById(@RequestParam  String id) {
+    public String getOtherById(@RequestParam String id) {
+        System.out.println(id);
         return id;
     }
 
