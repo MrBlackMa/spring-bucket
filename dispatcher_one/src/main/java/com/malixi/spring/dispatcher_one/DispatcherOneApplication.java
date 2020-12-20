@@ -5,6 +5,7 @@ import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RetryRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
@@ -12,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableFeignClients    //开启feign接口的自动注入
+@EnableCircuitBreaker  //restTemplate 的hystrix feign自带的
 public class DispatcherOneApplication {
 
 	public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class DispatcherOneApplication {
 	RestTemplate getRestTemplate() {
 		RestTemplate restTemplate = new RestTemplate();
 		// 增加拦截器注入到spring 只能拦截controller 不能拦截服务之间的调用
-		restTemplate.getInterceptors().add(new LoggingClientHttpRequestInterceptor());
+	//	restTemplate.getInterceptors().add(new LoggingClientHttpRequestInterceptor());
 		return restTemplate;
 	}
 

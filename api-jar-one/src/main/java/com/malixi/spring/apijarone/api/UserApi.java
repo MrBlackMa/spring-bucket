@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @version: 1.0
  */
 
-@RequestMapping("/user")
 public interface UserApi {
 
     /**
@@ -18,6 +17,6 @@ public interface UserApi {
      * 查看当前服务
      * @return test
      */
-    @GetMapping("/getUserInfo")
+    @RequestMapping("/user/getUserInfo")
     public String getUserInfo();
 }

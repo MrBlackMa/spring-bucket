@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.Map;
 
 /**
@@ -28,7 +29,7 @@ public class TestFeignController {
     @Autowired
     UserApiJar userApiJar;
 
-    @Autowired
+    @Resource
     OtherApiJar otherApiJar;
 
     @Autowired
@@ -45,6 +46,7 @@ public class TestFeignController {
     public String alive() {
         return userRestApi.alive();
     }
+
 
     /**
      * 该方法验证多个fegin的情况下 分接口类怎么处理
@@ -103,5 +105,15 @@ public class TestFeignController {
     @RequestMapping("/getOtherByPost")
     public Map<String,Object> getOtherByPost(@RequestParam Map<String,Object> map){
         return otherApiJar.getOtherByPost(map);
+    }
+
+
+    /**
+     *测试熔断策略
+     * @return
+     */
+    @GetMapping("/getAlive")
+    public String getAlive() {
+        return otherApiJar.getAlive();
     }
 }

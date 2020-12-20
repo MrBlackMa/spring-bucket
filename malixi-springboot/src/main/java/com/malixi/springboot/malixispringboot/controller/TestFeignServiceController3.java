@@ -2,6 +2,7 @@ package com.malixi.springboot.malixispringboot.controller;
 
 
 import com.malixi.spring.apijarone.api.OtherApi;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,11 @@ public class TestFeignServiceController3 implements OtherApi {
     @Override
     public String getOther() {
         return "otherApi1";
+    }
+
+    @GetMapping("/other/getAlive")
+    public String getAlive() {
+        return "getAlive";
     }
 
     @Override

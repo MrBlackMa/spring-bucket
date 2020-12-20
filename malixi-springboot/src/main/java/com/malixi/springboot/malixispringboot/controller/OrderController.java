@@ -2,6 +2,7 @@ package com.malixi.springboot.malixispringboot.controller;
 
 
 import com.malixi.spring.apijarone.api.OrderApi;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,6 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController implements OrderApi {
     @Override
     public String getOrderInfo() {
+        int i=1/0;
+        return "getOrderInfo2";
+    }
+
+
+    @RequestMapping("/getOrderInfo2")
+    public String getOrderInfo2() {
+        int i=1/0;
         return "getOrderInfo2";
     }
 }

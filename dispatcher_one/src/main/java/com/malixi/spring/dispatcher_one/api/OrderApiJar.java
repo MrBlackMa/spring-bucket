@@ -2,6 +2,8 @@ package com.malixi.spring.dispatcher_one.api;
 
 
 import com.malixi.spring.apijarone.api.OrderApi;
+
+import com.malixi.spring.dispatcher_one.main.hsytirx.exception.OrderBackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
@@ -10,7 +12,7 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @Description: com.malixi.spring.dispatcher_one.api
  * @version: 1.0
  */
-@FeignClient(name="service",contextId = "order")
+@FeignClient(name="service",contextId = "order",fallbackFactory = OrderBackFactory.class)
 public interface OrderApiJar extends OrderApi {
 
 }

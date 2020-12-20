@@ -17,7 +17,7 @@ import java.util.Map;
 /**
  * @Auther: smile malixi
  * @Date: 2020/12/17 - 17:36
- * @Description: com.malixi.springboot.malixispringboot.controller
+ * @Description: rest风格的服务端请求
  * @version: 1.0
  */
 @RestController

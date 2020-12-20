@@ -14,21 +14,21 @@ import java.util.Map;
  * @Description: com.malixi.spring.jar.api
  * @version: 1.0
  */
-@RequestMapping("/other")
+//@RequestMapping("/other")
 public interface OtherApi {
     /**
      * 测试抽离userpai
      * 查看当前服务
      * @return test
      */
-    @GetMapping("/getOther")
+    @RequestMapping("/other/getOther")
     public String getOther();
 
     /**
      * 传递单个参数的
      * @return
      */
-    @GetMapping("/getOtherById")
+    @RequestMapping("/other/getOtherById")
     public String getOtherById(@RequestParam String id);
 
 
@@ -36,7 +36,7 @@ public interface OtherApi {
      * 传递map
      * @return
      */
-    @GetMapping("/getOtherByMap")
+    @RequestMapping("/other/getOtherByMap")
     public Map<String,Object> getOtherByMap(@RequestParam Map<String,Object> map);
 
 
@@ -45,6 +45,6 @@ public interface OtherApi {
      * @param map
      * @return
      */
-    @PostMapping("/getOtherByPost")
+    @PostMapping("/other/getOtherByPost")
     public Map<String,Object> getOtherByPost(@RequestParam Map<String,Object> map);
 }
