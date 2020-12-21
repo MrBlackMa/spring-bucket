@@ -29,7 +29,13 @@
 <!--			<groupId>org.springframework.boot</groupId>-->
 <!--			<artifactId>spring-boot-starter-security</artifactId>-->
 <!--		</dependency>-->
-
+		<!--引用spring admin健康上报  2.3.1里面包含了actuator-->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<!--引用spring admin健康上报结束 -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

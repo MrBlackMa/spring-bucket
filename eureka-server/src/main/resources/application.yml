@@ -1,4 +1,9 @@
 spring:
+  #开启健康上报
+  boot:
+    admin:
+      client:
+        url: http://192.168.72.80:8888
   application:
     name: EurekaServer
     # 设置eureka的访问账号密码
@@ -27,3 +32,12 @@ server:
   port: 7900
 
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: always

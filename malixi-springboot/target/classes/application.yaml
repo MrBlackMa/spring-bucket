@@ -1,4 +1,16 @@
 spring:     # 配置不同的环境启动
+  #开启健康上报
+  boot:
+    admin:
+      client:
+        url: http://192.168.72.80:8888
+  #配置链路追踪
+  zipkin:
+    base-url: http://192.168.72.80:9411/
+  sleuth:
+    sampler:
+       rate: 1
+
   application:
       #name: service1 # 配置服务名称
       name: service # 配置服务名称 配置负载均衡
@@ -21,8 +33,12 @@ eureka:
 #    #心跳间隔时间,默认是30秒
 #    lease-renewal-interval-in-seconds: 3
 management:
-  #可以远程关闭服务节点
+
   endpoint:
+    #上报健康状况
+    health:
+      show-details: always
+    #可以远程关闭服务节点
     shutdown:
       enabled: true
   #开启所有端点

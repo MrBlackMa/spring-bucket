@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/service2/pom.xml" />
         <option value="$PROJECT_DIR$/api-jar-one/pom.xml" />
         <option value="$PROJECT_DIR$/my-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spring-admin/pom.xml" />
       </list>
     </option>
   </component>

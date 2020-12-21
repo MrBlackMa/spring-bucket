@@ -31,6 +31,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+
 		</dependency>
 
 		<!--引用tomcat内置包启动-->
@@ -72,6 +73,27 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<!--引用熔断降级结束-->
+
+		<!-- 引入sleuth和zipkin依赖 链路追踪 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<!-- 引入sleuth和zipkin依赖结束 -->
+
+		<!--引用spring admin健康上报  2.3.1里面包含了actuator-->
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-client</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<!--引用spring admin健康上报结束 -->
+
 	</dependencies>
 
 	<dependencyManagement>

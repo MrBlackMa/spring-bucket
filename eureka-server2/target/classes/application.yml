@@ -1,4 +1,8 @@
 spring:
+  boot:
+    admin:
+      client:
+        url: http://192.168.72.80:8888
   application:
     name: EurekaServer
 eureka:
@@ -22,3 +26,13 @@ eureka:
       #defaultZone: http://127.0.0.1:7900/eureka/
 server:
   port: 8000
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
+  endpoint:
+    health:
+      show-details: always
