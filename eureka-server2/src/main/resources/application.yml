@@ -18,7 +18,7 @@ eureka:
     #驱逐下线的服务，间隔,5秒，默认是60
     eviction-interval-timer-in-ms: 30000
   instance:
-    hostname: mysql81
+    hostname: 192.168.72.81
   client:
     #是否将自己注册到Eureka Server,默认为true，由于当前就是server，故而设置成false，表明该服务不会向eureka注册自己的信息
     register-with-eureka: true
