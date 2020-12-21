@@ -34,7 +34,7 @@
       <module name="eureka-server (1)" options="-parameters" />
       <module name="eureka-server2" options="-parameters" />
       <module name="malixi-springboot" options="-parameters" />
-      <module name="my-spring-admin" options="" />
+      <module name="my-spring-admin" options="-parameters" />
       <module name="my-zuul" options="-parameters" />
       <module name="service2" options="-parameters" />
       <module name="spring-shardingjdbc" options="-parameters" />

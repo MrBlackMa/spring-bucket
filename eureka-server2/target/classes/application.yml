@@ -10,7 +10,7 @@ eureka:
     enable-self-preservation: false # 关闭自我保护机制
     #此配置建议只试用开发和测试环境
     #驱逐下线的服务，间隔,5秒，默认是60
-    eviction-interval-timer-in-ms: 5000
+    eviction-interval-timer-in-ms: 30000
   instance:
     hostname: 192.168.72.81 #hostname 用来查找主机的    appname 标识分组的
               #euk2.com
