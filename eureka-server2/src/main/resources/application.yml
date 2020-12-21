@@ -1,10 +1,16 @@
 spring:
+  #开启健康上报
   boot:
     admin:
       client:
         url: http://192.168.72.80:8888
   application:
     name: EurekaServer
+    # 设置eureka的访问账号密码
+#  security:
+#    user:
+#      name: malixi
+#      password: malixi
 eureka:
   server:
     enable-self-preservation: false # 关闭自我保护机制
@@ -12,8 +18,7 @@ eureka:
     #驱逐下线的服务，间隔,5秒，默认是60
     eviction-interval-timer-in-ms: 30000
   instance:
-    hostname: 192.168.72.81 #hostname 用来查找主机的    appname 标识分组的
-              #euk2.com
+    hostname: mysql81
   client:
     #是否将自己注册到Eureka Server,默认为true，由于当前就是server，故而设置成false，表明该服务不会向eureka注册自己的信息
     register-with-eureka: true
@@ -22,11 +27,11 @@ eureka:
     #设置服务注册中心的URL，用于client和server端交流
     service-url:
       defaultZone: http://192.168.72.80:7900/eureka/
-      #defaultZone: http://euk1.com:7900/eureka/
       #defaultZone: http://127.0.0.1:7900/eureka/
 server:
   port: 8000
-  
+
+
 management:
   endpoints:
     web:
