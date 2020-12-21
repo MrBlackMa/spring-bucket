@@ -2,6 +2,7 @@ package com.malixi.springboot.malixispringboot.controller;
 
 
 import com.malixi.spring.apijarone.api.OrderApi;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class OrderController implements OrderApi {
+    @Value("${server.port}")
+    String port;
     @Override
     public String getOrderInfo() {
         int i=1/0;
@@ -23,15 +26,15 @@ public class OrderController implements OrderApi {
     @RequestMapping("/getOrderInfo2")
     public String getOrderInfo2() {
         int i=1/0;
-        return "getOrderInfo2";
+        return port+":getOrderInfo2";
     }
 
     /**
      * 测试zuul的负载均衡
      * @return
      */
-    @RequestMapping("/getZuulTest")
+    @RequestMapping("/order/getZuulTest")
     public String getZuulTest() {
-        return "getZuulTest";
+        return port+":getZuulTest";
     }
 }

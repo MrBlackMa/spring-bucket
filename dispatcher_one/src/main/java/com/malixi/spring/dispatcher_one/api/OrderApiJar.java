@@ -16,6 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(name="service",contextId = "order",fallbackFactory = OrderBackFactory.class)
 public interface OrderApiJar extends OrderApi {
 
-    @RequestMapping("/other/getAlive")
+    @RequestMapping("/order/getZuulTest")
     String getZuulTest();
 }

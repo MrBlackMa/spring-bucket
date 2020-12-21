@@ -19,7 +19,7 @@ public class OrderBackFactory implements FallbackFactory<OrderApiJar> {
         return new OrderApiJar() {
             @Override
             public String getZuulTest() {
-                return null;
+                return "呵呵";
             }
             @Override
             public String getOrderInfo() {

@@ -14,33 +14,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestZuulController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/api/OrderApiJar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/controller/TestZuulController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/hsytirx/HystrixTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/hsytirx/exception/AliveBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/hsytirx/exception/OrderBackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/DispatcherOneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/DispatcherOneApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/api/OrderApiJar.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/api/OrderApiJar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestRestTemplateHysTrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestRestTemplateHysTrixController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/service/TemplateHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/service/TemplateHystrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/DispatcherOneApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/DispatcherOneApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_two/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OrderApiJar.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OrderApiJar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/api/OrderApiJar.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/src/main/java/com/malixi/spring/dispatcher_two/api/OrderApiJar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_two/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/java/com/malixi/springboot/malixispringboot/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/MyZuulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/MyZuulApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/MyZuulApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/MyZuulApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/OrderController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +108,7 @@
       <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DispatcherOneApplication">
+  <component name="RunManager" selected="Spring Boot.Service2Application">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -301,7 +289,7 @@
       <workItem from="1608387582724" duration="6215000" />
       <workItem from="1608393960599" duration="6777000" />
       <workItem from="1608461111535" duration="15549000" />
-      <workItem from="1608533571871" duration="5818000" />
+      <workItem from="1608533571871" duration="10232000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud 全家桶">
       <created>1607673450364</created>
@@ -359,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608537670577</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="spring cloud 全家桶--网关服务">
+      <created>1608549617415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608549617415</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,10 +402,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="371" y="127" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.760@0.0.1280.760" timestamp="1606478236609" />
-    <state x="125" y="0" key="CommitChangelistDialog2" timestamp="1608537669979">
+    <state x="125" y="0" key="CommitChangelistDialog2" timestamp="1608549616585">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="125" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608537669979" />
+    <state x="125" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608549616585" />
     <state width="450" height="466" key="DebuggerActiveHint" timestamp="1607942967838">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -419,38 +414,38 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1608309414195" />
-    <state width="1238" height="117" key="GridCell.Tab.0.bottom" timestamp="1608481018487">
+    <state width="1238" height="188" key="GridCell.Tab.0.bottom" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608481018487" />
-    <state width="1238" height="117" key="GridCell.Tab.0.center" timestamp="1608481018483">
+    <state width="1238" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.0.center" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1608481018483" />
-    <state width="1238" height="117" key="GridCell.Tab.0.left" timestamp="1608481018483">
+    <state width="1238" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.0.left" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1608481018483" />
-    <state width="1238" height="117" key="GridCell.Tab.0.right" timestamp="1608481018483">
+    <state width="1238" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.0.right" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1608481018483" />
-    <state width="1238" height="117" key="GridCell.Tab.1.bottom" timestamp="1608481018487">
+    <state width="1238" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.1.bottom" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608481018487" />
-    <state width="1238" height="117" key="GridCell.Tab.1.center" timestamp="1608481018487">
+    <state width="1238" height="188" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.1.center" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1608481018487" />
-    <state width="1238" height="117" key="GridCell.Tab.1.left" timestamp="1608481018487">
+    <state width="1238" height="188" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.1.left" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1608481018487" />
-    <state width="1238" height="117" key="GridCell.Tab.1.right" timestamp="1608481018487">
+    <state width="1238" height="188" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
+    <state width="1238" height="188" key="GridCell.Tab.1.right" timestamp="1608554670930">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="117" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1608481018487" />
+    <state width="1238" height="188" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1608554670930" />
     <state width="1238" height="294" key="GridCell.Tab.2.bottom" timestamp="1608308579160">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
