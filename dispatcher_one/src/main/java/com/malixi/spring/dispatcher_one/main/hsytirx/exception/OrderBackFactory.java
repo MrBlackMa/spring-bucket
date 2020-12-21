@@ -18,6 +18,10 @@ public class OrderBackFactory implements FallbackFactory<OrderApiJar> {
     public OrderApiJar create(Throwable t) {
         return new OrderApiJar() {
             @Override
+            public String getZuulTest() {
+                return null;
+            }
+            @Override
             public String getOrderInfo() {
                 System.out.println(t);
                 if(t instanceof FeignException.InternalServerError){

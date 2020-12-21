@@ -5,6 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+
 /**
  * @Auther: smile malixi
  * @Date: 2020/12/20 - 20:35
@@ -17,9 +21,10 @@ public class TemplateHystrix {
     RestTemplate restTemplate;
 
     @HystrixCommand(fallbackMethod = "back")
-    public String getOrderInfo2() {
+        public String getOrderInfo2() {
+        //ExecutorService executorService = Executors.newCachedThreadPool();
         System.out.println("service+bbb");
-        String url ="http://service/order/getOrderInfo2";
+        String url ="http://service/order/getOrderInfo";
         String object = restTemplate.getForObject(url, String.class);
 
         return object;

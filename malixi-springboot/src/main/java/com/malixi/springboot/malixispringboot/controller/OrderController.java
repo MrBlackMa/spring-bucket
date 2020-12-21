@@ -25,4 +25,13 @@ public class OrderController implements OrderApi {
         int i=1/0;
         return "getOrderInfo2";
     }
+
+    /**
+     * 测试zuul的负载均衡
+     * @return
+     */
+    @RequestMapping("/getZuulTest")
+    public String getZuulTest() {
+        return "getZuulTest";
+    }
 }

@@ -1,0 +1,4 @@
+com\malixi\spring\apijarone\api\OtherApi.class
+com\malixi\spring\apijarone\ApiJarOneApplication.class
+com\malixi\spring\apijarone\api\OrderApi.class
+com\malixi\spring\apijarone\api\UserApi.class
