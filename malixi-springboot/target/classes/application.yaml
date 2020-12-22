@@ -6,7 +6,7 @@ spring:     # 配置不同的环境启动
         url: http://192.168.72.80:8888
   #配置链路追踪
   zipkin:
-    base-url: http://192.168.72.80:9411/
+    base-url: http://192.168.72.80:9411
   sleuth:
     sampler:
        rate: 1

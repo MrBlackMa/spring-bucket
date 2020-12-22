@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.spring.malixi.eurekaserver.EurekaServerApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.198 s - in com.spring.malixi.eurekaserver.EurekaServerApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.171 s - in com.spring.malixi.eurekaserver.EurekaServerApplicationTests
