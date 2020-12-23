@@ -7,17 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-shardingjdbc" />
-        <module name="dispatcher_one" />
-        <module name="shareding-jdbc-nospring" />
         <module name="malixi-springboot" />
         <module name="api-jar-one" />
         <module name="my-zuul" />
         <module name="service2" />
         <module name="eureka-server (1)" />
         <module name="eureka-server2" />
+        <module name="eureka-server2 (1)" />
         <module name="eureka-server" />
         <module name="my-spring-admin" />
         <module name="dispatcher_two" />
+        <module name="dispatcher_one" />
+        <module name="shareding-jdbc-nospring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-server (1)" options="-parameters" />
       <module name="eureka-server2" options="-parameters" />
+      <module name="eureka-server2 (1)" options="-parameters" />
       <module name="malixi-springboot" options="-parameters" />
       <module name="my-spring-admin" options="-parameters" />
       <module name="my-zuul" options="-parameters" />

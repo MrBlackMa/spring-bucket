@@ -14,22 +14,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/eureka-server3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/src/main/java/com/spring/malixi/eurekaserver/EurekaServerApplication3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/src/main/resources/application-euk1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/src/test/java/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/eureka-server2-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/eureka-server2-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server3/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server2/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/eureka-server2-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/TEST-com.spring.malixi.eurekaserver.EurekaServerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/surefire-reports/com.spring.malixi.eurekaserver.EurekaServerApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-spring-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-spring-admin/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-spring-admin/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-spring-admin/target/classes/application.properties" afterDir="false" />
     </list>
@@ -80,7 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/service2/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-spring-admin/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -105,23 +111,21 @@
       <recent name="com.malixi.spring.service2.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\my-spring-admin\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\eureka-server3\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket" />
       <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\service2\src\main\resources" />
       <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\dispatcher_two\src\main\java\com\malixi\spring\dispatcher_two" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\dispatcher_one\src\main\java\com\malixi\spring\dispatcher_one\main\hsytirx" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\java\com\malixi\springboot\malixispringboot\controller" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\service2\src\main\java\com\malixi\spring\service2\controller" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DispatcherOneApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,22 +140,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
       <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.DataApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MalixiSpringbootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="malixi-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.malixi.springboot.malixispringboot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.MalixiSpringbootApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -208,9 +196,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaServerApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server2 (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.malixi.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.malixi.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.malixi.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka-server2 (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.malixi.eurekaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.malixi.eurekaserver.EurekaServerApplication3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,19 +257,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringShardingjdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-shardingjdbc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.malixi.spring.shardingjdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.shardingjdbc.SpringShardingjdbcApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.springboot.springboot.SpringbootApplication" />
@@ -265,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.EurekaServerApplication3" />
+        <item itemvalue="Spring Boot.EurekaServerApplication (2)" />
         <item itemvalue="JUnit.DataApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.EurekaServerApplication (1)" />
         <item itemvalue="JUnit.MalixiSpringbootApplicationTests.test" />
-        <item itemvalue="JUnit.MalixiSpringbootApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.SpringShardingjdbcApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +317,8 @@
       <workItem from="1608577717834" duration="5206000" />
       <workItem from="1608586063460" duration="5780000" />
       <workItem from="1608591957800" duration="1610000" />
-      <workItem from="1608595113198" duration="342000" />
+      <workItem from="1608595113198" duration="1574000" />
+      <workItem from="1608622155035" duration="7246000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud 全家桶">
       <created>1607673450364</created>
@@ -416,7 +418,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608582936405</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="spring cloud 全家桶--spring admin 健康上报搞定">
+      <created>1608595570365</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608595570365</updated>
+    </task>
+    <task id="LOCAL-00016" summary="spring cloud 全家桶--spring admin 健康上报 邮件发送搞定">
+      <created>1608627042337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608627042337</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,17 +466,19 @@
     <MESSAGE value="spring cloud 全家桶--网关服务成功" />
     <MESSAGE value="spring cloud 全家桶--健康上报" />
     <MESSAGE value="spring cloud 全家桶--高可用eureka" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring cloud 全家桶--高可用eureka" />
+    <MESSAGE value="spring cloud 全家桶--spring admin 健康上报搞定" />
+    <MESSAGE value="spring cloud 全家桶--spring admin 健康上报 邮件发送搞定" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring cloud 全家桶--spring admin 健康上报 邮件发送搞定" />
   </component>
   <component name="WindowStateProjectService">
     <state x="121" y="0" key="#Project_Structure" timestamp="1606381676305">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.760@0.0.1280.760" timestamp="1606381676305" />
-    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607589402285">
+    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608626573281">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1607589402285" />
+    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1608626573281" />
     <state x="446" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1608548900355">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -469,6 +487,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="137" y="303" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.760@0.0.1280.760" timestamp="1608465637373" />
+    <state x="372" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608627631040">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="372" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1608627631040" />
     <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607500555712">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -477,10 +499,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="371" y="127" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.760@0.0.1280.760" timestamp="1606478236609" />
-    <state x="125" y="0" key="CommitChangelistDialog2" timestamp="1608582934941">
+    <state x="125" y="0" key="CommitChangelistDialog2" timestamp="1608627041157">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="125" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608582934941" />
+    <state x="125" y="0" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1608627041157" />
     <state width="450" height="466" key="DebuggerActiveHint" timestamp="1607942967838">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -493,54 +515,54 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1608578017841" />
-    <state width="1238" height="280" key="GridCell.Tab.0.bottom" timestamp="1608592603301">
+    <state width="1238" height="249" key="GridCell.Tab.0.bottom" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="280" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608592603301" />
-    <state width="1238" height="280" key="GridCell.Tab.0.center" timestamp="1608592603301">
+    <state width="1238" height="249" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.0.center" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="280" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1608592603301" />
-    <state width="1238" height="280" key="GridCell.Tab.0.left" timestamp="1608592603301">
+    <state width="1238" height="249" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.0.left" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="280" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1608592603301" />
-    <state width="1238" height="280" key="GridCell.Tab.0.right" timestamp="1608592603301">
+    <state width="1238" height="249" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.0.right" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="280" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1608592603301" />
-    <state width="1238" height="103" key="GridCell.Tab.1.bottom" timestamp="1608591921338">
+    <state width="1238" height="249" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.1.bottom" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="103" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608591921338" />
-    <state width="1238" height="103" key="GridCell.Tab.1.center" timestamp="1608591921338">
+    <state width="1238" height="249" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.1.center" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="103" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1608591921338" />
-    <state width="1238" height="103" key="GridCell.Tab.1.left" timestamp="1608591921338">
+    <state width="1238" height="249" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.1.left" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="103" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1608591921338" />
-    <state width="1238" height="103" key="GridCell.Tab.1.right" timestamp="1608591921338">
+    <state width="1238" height="249" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="249" key="GridCell.Tab.1.right" timestamp="1608627662457">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="103" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1608591921338" />
-    <state width="1238" height="294" key="GridCell.Tab.2.bottom" timestamp="1608308579160">
+    <state width="1238" height="249" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1608627662457" />
+    <state width="1238" height="214" key="GridCell.Tab.2.bottom" timestamp="1608596690048">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="294" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
-    <state width="1238" height="294" key="GridCell.Tab.2.center" timestamp="1608308579160">
+    <state width="1238" height="214" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1608596690048" />
+    <state width="1238" height="214" key="GridCell.Tab.2.center" timestamp="1608596690044">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="294" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
-    <state width="1238" height="294" key="GridCell.Tab.2.left" timestamp="1608308579160">
+    <state width="1238" height="214" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1608596690044" />
+    <state width="1238" height="214" key="GridCell.Tab.2.left" timestamp="1608596690044">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="294" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
-    <state width="1238" height="294" key="GridCell.Tab.2.right" timestamp="1608308579160">
+    <state width="1238" height="214" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1608596690044" />
+    <state width="1238" height="214" key="GridCell.Tab.2.right" timestamp="1608596690048">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="1238" height="294" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1608308579160" />
+    <state width="1238" height="214" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1608596690048" />
     <state x="221" y="115" key="IDE.errors.dialog" timestamp="1606401200139">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -557,10 +579,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1608577803262" />
-    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1608580361888">
+    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1608627063492">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1608580361888" />
+    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1608627063492" />
     <state x="73" y="89" width="1093" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608218805725">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
