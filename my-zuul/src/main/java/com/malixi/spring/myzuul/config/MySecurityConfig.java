@@ -1,5 +1,7 @@
 package com.malixi.spring.myzuul.config;
 
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -7,15 +9,22 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
 import java.io.IOException;
+import java.util.Collections;
 
 /**
  * @Auther: smile malixi
@@ -26,6 +35,12 @@ import java.io.IOException;
 @Configuration
 @EnableWebSecurity
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
+
+
+    @Autowired
+    private DataSource dataSource;
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
@@ -73,15 +88,38 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
     // session 登录  并发量高 -> jwt
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-        auth.
-                inMemoryAuthentication()
-                .withUser("123").password(new BCryptPasswordEncoder().encode("123")).roles("admin")
-                .and()
-                .withUser("321").password("321").roles("user")
-        ;
+//    /**
+//     * 直接使用user对象
+//     * @param auth
+//     * @throws Exception
+//     */
+//    @Override
+//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//         // 内存式的构建用户信息
+//        auth.
+//                inMemoryAuthentication()
+//                .withUser("123").password(new BCryptPasswordEncoder().encode("123")).roles("admin")
+//                .and()
+//                .withUser("321").password("321").roles("user")
+//        ;
+//    }
+
+    /**
+     * 自定义user对象 存内存里面的模式
+     * 基本不用
+     * @return
+     */
+    @Bean
+    public UserDetailsService userDetailsService() {
+        // 基于内存的
+//        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
+//        User user = new User("123", new BCryptPasswordEncoder().encode("123"), true, true, true, true, Collections.singletonList(new SimpleGrantedAuthority("xx")));
+//        manager.createUser(user);
+//        manager.createUser(User.withUsername("malixi").password(new BCryptPasswordEncoder().encode("xx")).roles("xxz").build());
+       // 基于数据库的
+        JdbcUserDetailsManager manager=new JdbcUserDetailsManager(dataSource);
+        return manager;
     }
 
     @Bean
