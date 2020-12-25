@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 对应springboot二期的内容
+ */
 @RestController
 public class EmpController {
 

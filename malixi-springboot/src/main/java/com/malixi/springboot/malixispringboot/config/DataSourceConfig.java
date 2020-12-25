@@ -1,6 +1,7 @@
 package com.malixi.springboot.malixispringboot.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
 import com.malixi.springboot.malixispringboot.entity.DataSourceType;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -20,18 +21,18 @@ import java.util.Map;
 public class DataSourceConfig {
     @Bean
     @ConfigurationProperties("spring.datasource.master")
-   // @ConfigurationProperties("spring.datasource.master")
     public DataSource masterDataSource() {
       //  return DataSourceBuilder.create().build();
-       return new DruidDataSource();
+      // return new DruidDataSource();
+        return DruidDataSourceBuilder.create().build();
     }
 
     @Bean
     @ConfigurationProperties("spring.datasource.slave")
-   // @ConfigurationProperties("spring.datasource.slave")
     public DataSource slaveDataSource() {
       //  return DataSourceBuilder.create().build();
-        return new DruidDataSource();
+        //return new DruidDataSource();
+        return DruidDataSourceBuilder.create().build();
     }
     
     @Bean
