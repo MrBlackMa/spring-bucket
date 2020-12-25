@@ -24,6 +24,7 @@ public class DataSourceConfig {
     public DataSource masterDataSource() {
       //  return DataSourceBuilder.create().build();
       // return new DruidDataSource();
+        //兼容spring cloud的druid
         return DruidDataSourceBuilder.create().build();
     }
 
@@ -32,6 +33,7 @@ public class DataSourceConfig {
     public DataSource slaveDataSource() {
       //  return DataSourceBuilder.create().build();
         //return new DruidDataSource();
+        //兼容spring cloud的druid
         return DruidDataSourceBuilder.create().build();
     }
 
@@ -41,6 +43,7 @@ public class DataSourceConfig {
         //  return DataSourceBuilder.create().build();
          // 使用阿里的druid
         //return new DruidDataSource();
+        // 兼容spring cloud的druid
         return DruidDataSourceBuilder.create().build();
     }
 
