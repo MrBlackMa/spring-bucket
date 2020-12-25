@@ -32,4 +32,11 @@ public class EmpController {
         return maps;
     }
 
+    @GetMapping("/slave2")
+    @DataSource(value = DataSourceType.SLAVE2)
+    public List<Map<String, Object>> remote2(){
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from t_malixi");
+        return maps;
+    }
+
 }

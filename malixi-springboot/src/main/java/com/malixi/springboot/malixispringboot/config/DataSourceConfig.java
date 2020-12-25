@@ -34,13 +34,30 @@ public class DataSourceConfig {
         //return new DruidDataSource();
         return DruidDataSourceBuilder.create().build();
     }
-    
+
+    @Bean
+    @ConfigurationProperties("spring.datasource.slave2")
+    public DataSource slave2DataSource() {
+        //  return DataSourceBuilder.create().build();
+         // 使用阿里的druid
+        //return new DruidDataSource();
+        return DruidDataSourceBuilder.create().build();
+    }
+
+    /**
+     * 每增加一个数据源 则增加一个参数
+     * @param masterDataSource
+     * @param slaveDataSource
+     * @param slave2DataSource
+     * @return
+     */
     @Bean
     @Primary
-    public DynamicDataSource dataSource(DataSource masterDataSource, DataSource slaveDataSource) {
+    public DynamicDataSource dataSource(DataSource masterDataSource, DataSource slaveDataSource,DataSource slave2DataSource) {
         Map<Object, Object> targetDataSources = new HashMap<>();
         targetDataSources.put(DataSourceType.MASTER.name(), masterDataSource);
         targetDataSources.put(DataSourceType.SLAVE.name(), slaveDataSource);
+        targetDataSources.put(DataSourceType.SLAVE2.name(), slave2DataSource);
         return new DynamicDataSource(masterDataSource, targetDataSources);
     }
 }

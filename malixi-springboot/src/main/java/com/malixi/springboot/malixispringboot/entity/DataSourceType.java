@@ -5,5 +5,6 @@ package com.malixi.springboot.malixispringboot.entity;
  */
 public enum DataSourceType {
     MASTER,
-    SLAVE
+    SLAVE,
+    SLAVE2
 }

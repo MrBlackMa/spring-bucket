@@ -40,3 +40,9 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
       url: jdbc:mysql://192.168.72.81:3306/t_demo_one?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
       type: com.alibaba.druid.pool.DruidDataSource
+    slave2:
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.72.81:3306/t_demo_one?serverTimezone=UTC&useUnicode=true@characterEncoding=utf-8
+      type: com.alibaba.druid.pool.DruidDataSource
