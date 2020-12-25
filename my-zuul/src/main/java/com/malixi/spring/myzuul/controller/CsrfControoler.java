@@ -15,6 +15,9 @@ public class CsrfControoler {
 
     @RequestMapping("/csrf")
     public String getCsrf(){
+        System.out.println("大爷,您来了~");
         return "csrf";
     }
+
+
 }
