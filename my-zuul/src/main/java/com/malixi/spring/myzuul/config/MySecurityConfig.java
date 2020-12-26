@@ -1,6 +1,9 @@
 package com.malixi.spring.myzuul.config;
 
 
+
+import com.malixi.spring.myzuul.service.MyAuthProvider;
+import com.malixi.spring.myzuul.service.MyDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,6 +16,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
@@ -29,7 +33,7 @@ import java.util.Collections;
 /**
  * @Auther: smile malixi
  * @Date: 2020/12/23 - 21:35
- * @Description: 下发hash值
+ * @Description: secutiry 配置类
  * @version: 1.0
  */
 @Configuration
@@ -37,8 +41,6 @@ import java.util.Collections;
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
-    @Autowired
-    private DataSource dataSource;
 
 
     @Override
@@ -71,7 +73,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                     @Override
                     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
                                                         AuthenticationException exception) throws IOException, ServletException {
-                        // TODO Auto-generated method stub
+
                         exception.printStackTrace();
                         // 判断异常信息 跳转不同页面 比如 密码过期重置
                         //request.getRequestDispatcher(request.getRequestURL().toString()).forward(request, response);
@@ -80,7 +82,16 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
                     }
                 })
-                //默认 所有的post请求 都会拦截
+
+//                .and()
+//                .rememberMe()
+                .and()
+                .sessionManagement()
+                // 允许同时登录的 客户端有几个
+                .maximumSessions(1)
+                // 已经有用户登录后， 不允许相同用户再次登录
+                .maxSessionsPreventsLogin(true)
+                .and()
                 .and()
                 .csrf()
                 .csrfTokenRepository(new HttpSessionCsrfTokenRepository());
@@ -89,41 +100,74 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     // session 登录  并发量高 -> jwt
 
-//    /**
-//     * 直接使用user对象
-//     * @param auth
-//     * @throws Exception
-//     */
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//         // 内存式的构建用户信息
+    /**
+     * 直接使用user对象
+     * @param auth
+     * @throws Exception
+     */
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+         // 内存式的构建用户信息
 //        auth.
 //                inMemoryAuthentication()
 //                .withUser("123").password(new BCryptPasswordEncoder().encode("123")).roles("admin")
 //                .and()
 //                .withUser("321").password("321").roles("user")
 //        ;
-//    }
+        // NoOpPasswordEncoder.getInstance() 不加密直接使用明文
+         //auth.userDetailsService(myDetailService()).passwordEncoder(NoOpPasswordEncoder.getInstance());
+         auth.userDetailsService(myDetailService())
+                 .and()
+                 //账号密码 验证
+         .authenticationProvider(myAuthProvider())
+         ;
+
+    }
 
     /**
-     * 自定义user对象 存内存里面的模式
-     * 基本不用
+     * 自定义user对象 存内存里面的模式 内存的不用
+     * 基于数据库的 需要实现这个接口
+     * @return
+     */
+
+    //
+//    @Autowired
+//    private DataSource dataSource;
+//    @Bean
+//    public UserDetailsService userDetailsService() {
+//        // 基于内存的
+////        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
+////        User user = new User("123", new BCryptPasswordEncoder().encode("123"), true, true, true, true, Collections.singletonList(new SimpleGrantedAuthority("xx")));
+////        manager.createUser(user);
+////        manager.createUser(User.withUsername("malixi").password(new BCryptPasswordEncoder().encode("xx")).roles("xxz").build());
+//       // 基于数据库的
+//       JdbcUserDetailsManager manager=new JdbcUserDetailsManager(dataSource);
+//
+//        //利用自带的api创建用户等
+//       manager.createUser(User.withUsername("malixi").password(new BCryptPasswordEncoder().encode("111")).roles("admin","xxoo").build());
+//        return manager;
+//    }
+
+
+    /**
+     * 开启加密
      * @return
      */
     @Bean
-    public UserDetailsService userDetailsService() {
-        // 基于内存的
-//        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-//        User user = new User("123", new BCryptPasswordEncoder().encode("123"), true, true, true, true, Collections.singletonList(new SimpleGrantedAuthority("xx")));
-//        manager.createUser(user);
-//        manager.createUser(User.withUsername("malixi").password(new BCryptPasswordEncoder().encode("xx")).roles("xxz").build());
-       // 基于数据库的
-        JdbcUserDetailsManager manager=new JdbcUserDetailsManager(dataSource);
-        return manager;
+    PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 
     @Bean
-    PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+    MyDetailService myDetailService(){
+        System.out.println("初始化myDetailService");
+        return new MyDetailService();
+    }
+
+
+    @Bean
+    MyAuthProvider myAuthProvider(){
+        System.out.println("初始化myAuthProvider");
+        return new MyAuthProvider();
     }
 }
