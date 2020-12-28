@@ -2,16 +2,22 @@ package com.malixi.spring.myzuul.config;
 
 
 
+import com.malixi.spring.myzuul.filter.CodeFilter;
 import com.malixi.spring.myzuul.service.MyAuthProvider;
 import com.malixi.spring.myzuul.service.MyDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchy;
+import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,13 +27,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.logout.LogoutHandler;
 import org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository;
+import org.springframework.security.web.session.HttpSessionEventPublisher;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Collections;
 
 /**
@@ -38,6 +49,7 @@ import java.util.Collections;
  */
 @Configuration
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true,securedEnabled = true)
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
@@ -45,19 +57,23 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
+        // 前置fileter  全部从这个走
+        http.addFilterBefore(new CodeFilter(), UsernamePasswordAuthenticationFilter.class);
         String pass1 = new BCryptPasswordEncoder().encode("123");
         String pass2 = new BCryptPasswordEncoder().encode("123");
         System.out.println("pass1:" + pass1);
         System.out.println("pass2:" + pass2);
-
         http.
                 // 哪些 地址需要登录
                  authorizeRequests()
                 // 针对游客请求 全部放行
                 .antMatchers("/dispatcher_one/visitor/**").permitAll()
-                //所有请求都需要验证
-                .anyRequest().authenticated()
+                // 图形验证码
+                .antMatchers("/kaptcha/getImg").permitAll()
+                   // 设置可以不用登录的白名单
+                // .antMatchers("url").hasIpAddress("127.0.0.1")
+//                //所有请求都需要验证
+               .anyRequest().authenticated()
                 .and()
                 //自定义登录页
                 //permitAll 给没登录的 用户可以访问这个地址的权限
@@ -69,17 +85,40 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 // 配置 登录页 的表单name   admin -> 分权限 展示页面
                 .passwordParameter("oo")
                 .usernameParameter("xx")
+                // 在登录成功后会被调起
+                // 用来锁定资源 初始化资源等
+                .successHandler(new AuthenticationSuccessHandler() {
+
+                    @Override
+                    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+                                                        Authentication authentication) throws IOException, ServletException {
+                        Object user = authentication.getPrincipal();
+                        System.out.println(authentication.getDetails());
+
+                        // 根据权限不同，跳转到不同页面
+                        //System.out.println(authentication.getAuthorities());
+                       // request.getRequestDispatcher("").forward(request, response);
+                        System.out.println(user);
+                    }
+                })
                 .failureHandler(new AuthenticationFailureHandler() {
                     @Override
-                    public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
-                                                        AuthenticationException exception) throws IOException, ServletException {
-
+                    public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
                         exception.printStackTrace();
                         // 判断异常信息 跳转不同页面 比如 密码过期重置
                         //request.getRequestDispatcher(request.getRequestURL().toString()).forward(request, response);
                         request.getRequestDispatcher("/UserNpError").forward(request, response);
                         // 记录登录失败次数 禁止登录
-
+                    }
+                })
+                .and().logout()
+                // 退出处理器
+                // 用于清理用户资源
+                .addLogoutHandler(new LogoutHandler() {
+                    @Override
+                    public void logout(HttpServletRequest request, HttpServletResponse response, Authentication authentication) {
+                        // TODO Auto-generated method stub
+                        System.out.println("我滚了。。。");
                     }
                 })
 
@@ -90,7 +129,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 // 允许同时登录的 客户端有几个
                 .maximumSessions(1)
                 // 已经有用户登录后， 不允许相同用户再次登录
-                .maxSessionsPreventsLogin(true)
+                //.maxSessionsPreventsLogin(true)
                 .and()
                 .and()
                 .csrf()
@@ -121,6 +160,20 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                  //账号密码 验证
          .authenticationProvider(myAuthProvider())
          ;
+
+    }
+
+    /**
+     * 父子权限赋权
+     * @return
+     */
+    @Bean
+    RoleHierarchy roleHierarchy() {
+
+        RoleHierarchyImpl impl = new RoleHierarchyImpl();
+        impl.setHierarchy("ROLE_admin > ROLE_user");
+
+        return impl;
 
     }
 
@@ -169,5 +222,10 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     MyAuthProvider myAuthProvider(){
         System.out.println("初始化myAuthProvider");
         return new MyAuthProvider();
+    }
+
+    @Bean
+    HttpSessionEventPublisher httpSessionEventPublisher() {
+        return new HttpSessionEventPublisher();
     }
 }
