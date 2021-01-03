@@ -2,6 +2,8 @@ package com.malixi.spring.myzuul.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 
+import java.util.UUID;
+
 /**
  * @Auther: smile malixi
  * @Date: 2020/12/25 - 20:40
@@ -14,6 +16,11 @@ public class Authorities implements GrantedAuthority {
 
     private String authority;
 
+    private String UUID= "112233";
+
+    public String getUUID() {
+        return UUID;
+    }
 
     public String getUserName() {
         return userName;

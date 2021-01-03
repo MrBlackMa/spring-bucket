@@ -42,6 +42,7 @@ public class MyDetailService implements UserDetailsService {
             Authorities authorities =new Authorities();
             authorities.setAuthority(list.get(i).get("authority").toString());
             authorities.setUserName(list.get(i).get("username").toString());
+
             set.add(authorities);
         }
         Users users=new Users(map.get("username").toString(),map.get("PASSWORD").toString(),set);

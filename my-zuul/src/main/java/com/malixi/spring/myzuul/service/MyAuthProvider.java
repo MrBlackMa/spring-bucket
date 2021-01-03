@@ -33,6 +33,7 @@ public class MyAuthProvider implements AuthenticationProvider {
 
 
 
+
 		System.out.println("authentication" + authentication);
 		// 去数据库拿出来 User对象
 		UserDetails userDetails = myDetailService.loadUserByUsername(username);

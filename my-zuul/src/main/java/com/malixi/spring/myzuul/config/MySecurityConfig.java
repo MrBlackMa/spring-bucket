@@ -3,8 +3,10 @@ package com.malixi.spring.myzuul.config;
 
 
 import com.malixi.spring.myzuul.filter.CodeFilter;
+import com.malixi.spring.myzuul.filter.RequestFilter;
 import com.malixi.spring.myzuul.service.MyAuthProvider;
 import com.malixi.spring.myzuul.service.MyDetailService;
+import com.malixi.spring.myzuul.utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -53,12 +55,11 @@ import java.util.Collections;
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
 
-
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // 前置fileter  全部从这个走
         http.addFilterBefore(new CodeFilter(), UsernamePasswordAuthenticationFilter.class);
+       // http.addFilterBefore(new RequestFilter(), UsernamePasswordAuthenticationFilter.class);
         String pass1 = new BCryptPasswordEncoder().encode("123");
         String pass2 = new BCryptPasswordEncoder().encode("123");
         System.out.println("pass1:" + pass1);
@@ -68,7 +69,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                  authorizeRequests()
                 // 针对游客请求 全部放行
                 .antMatchers("/dispatcher_one/visitor/**").permitAll()
-                // 图形验证码
+                // 图形验证码 放行
                 .antMatchers("/kaptcha/getImg").permitAll()
                    // 设置可以不用登录的白名单
                 // .antMatchers("url").hasIpAddress("127.0.0.1")
@@ -76,12 +77,12 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                .anyRequest().authenticated()
                 .and()
                 //自定义登录页
-                //permitAll 给没登录的 用户可以访问这个地址的权限
+                //沒有登录 默认给的页面请求
                 .formLogin().loginPage("/login").permitAll()
                 // 登录失败 页面
                 .failureUrl("/login.html?error")
-                // 登录成功跳转的页面
-                .defaultSuccessUrl("/dispatcher_one/getHi",true).permitAll()
+                // 登录成功跳转默认跳转的页面  下面有登录成功的sucessHandler
+               // .defaultSuccessUrl("/dispatcher_one/getHi",true).permitAll()
                 // 配置 登录页 的表单name   admin -> 分权限 展示页面
                 .passwordParameter("oo")
                 .usernameParameter("xx")
@@ -93,11 +94,12 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                                         Authentication authentication) throws IOException, ServletException {
                         Object user = authentication.getPrincipal();
-                        System.out.println(authentication.getDetails());
+                        System.out.println("我是登录成功进来了"+authentication.getDetails());
 
+                       // response.addHeader("token","");
                         // 根据权限不同，跳转到不同页面
                         //System.out.println(authentication.getAuthorities());
-                       // request.getRequestDispatcher("").forward(request, response);
+                        request.getRequestDispatcher("/loginSuccess").forward(request, response);
                         System.out.println(user);
                     }
                 })
@@ -108,6 +110,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                         // 判断异常信息 跳转不同页面 比如 密码过期重置
                         //request.getRequestDispatcher(request.getRequestURL().toString()).forward(request, response);
                         request.getRequestDispatcher("/UserNpError").forward(request, response);
+                        // request.getSession().setMaxInactiveInterval();
                         // 记录登录失败次数 禁止登录
                     }
                 })
@@ -126,8 +129,10 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 //                .rememberMe()
                 .and()
                 .sessionManagement()
+                    .invalidSessionUrl("/session/invalid") //session过期后跳转的URL
                 // 允许同时登录的 客户端有几个
                 .maximumSessions(1)
+                  //session过期后跳转的URL
                 // 已经有用户登录后， 不允许相同用户再次登录
                 //.maxSessionsPreventsLogin(true)
                 .and()

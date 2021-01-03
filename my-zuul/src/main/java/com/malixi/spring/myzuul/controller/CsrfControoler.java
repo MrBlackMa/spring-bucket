@@ -23,7 +23,7 @@ public class CsrfControoler {
     public String getCsrf(){
         // 获取全局权限
 //        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//
+//   UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication() .getPrincipal();
 //        authentication.getPrincipal()
         System.out.println("大爷,您来了~");
         return "csrf";
@@ -41,6 +41,10 @@ public class CsrfControoler {
         return "admincsrf";
     }
 
-
+    @RequestMapping("/luser/demo")
+    public String luser(){
+        System.out.println("大爷,您来了~");
+        return "demo";
+    }
 
 }
