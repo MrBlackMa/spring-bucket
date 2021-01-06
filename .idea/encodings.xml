@@ -11,7 +11,10 @@
     <file url="file://$PROJECT_DIR$/my-spring-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-spring-admin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-zuul/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-zuul2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-session-redis-boot37/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-shardingjdbc/src/main/java" charset="UTF-8" />
   </component>
 </project>

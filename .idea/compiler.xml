@@ -10,18 +10,25 @@
         <module name="malixi-springboot" />
         <module name="api-jar-one" />
         <module name="my-zuul" />
+        <module name="spring-gateway" />
         <module name="service2" />
+        <module name="spring-session-redis-boot37" />
         <module name="eureka-server (1)" />
         <module name="eureka-server2" />
         <module name="eureka-server2 (1)" />
         <module name="eureka-server" />
         <module name="my-spring-admin" />
         <module name="dispatcher_two" />
+        <module name="JWT-1" />
         <module name="dispatcher_one" />
+        <module name="my-zuul2" />
         <module name="shareding-jdbc-nospring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JWT-1" target="11" />
+      <module name="session-redis" target="11" />
+      <module name="spring-session-redis" target="11" />
       <module name="spring_aop_tx" target="11" />
       <module name="springboot" target="11" />
     </bytecodeTargetLevel>
@@ -38,7 +45,12 @@
       <module name="malixi-springboot" options="-parameters" />
       <module name="my-spring-admin" options="-parameters" />
       <module name="my-zuul" options="-parameters" />
+      <module name="my-zuul2" options="-parameters" />
       <module name="service2" options="-parameters" />
+      <module name="session-redis" options="-parameters" />
+      <module name="spring-gateway" options="-parameters" />
+      <module name="spring-session-redis" options="-parameters" />
+      <module name="spring-session-redis-boot37" options="-parameters" />
       <module name="spring-shardingjdbc" options="-parameters" />
       <module name="springboot" options="-parameters" />
     </option>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.malixi.spring.dispatcher_two.DispatcherTwoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.022 s - in com.malixi.spring.dispatcher_two.DispatcherTwoApplicationTests

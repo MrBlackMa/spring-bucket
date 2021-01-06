@@ -32,4 +32,15 @@ public class TestZuulController {
         return port+"----->"+orderApiJar.getZuulTest();
     }
 
+
+    /**
+     * 测试Zuul网关的负载均衡
+     * @return
+     */
+    @RequestMapping("/getMyGetaWay")
+    public String getMyGetaWay(){
+        return port;
+    }
+
+
 }

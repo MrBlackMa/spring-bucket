@@ -22,8 +22,7 @@ import java.io.IOException;
  * @Version V1.0
  **/
 
-@WebFilter(filterName = "requestFilter", urlPatterns = "/luser/**")
-@Component
+
 public class RequestFilter implements Filter {
 
     private JwtUtil jwtUtil = new JwtUtil();

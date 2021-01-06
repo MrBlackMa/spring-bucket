@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #开启 从eureka里面拉取注册
+      routes:
+        - id: dso-one
+          predicates:
+            - Path=/dpOne/**    #配置断言 路径
+          uri: lb://dpOne #配置 负载均衡 调取服务名为 dispatcher_one
+          filters:
+            - StripPrefix=1  #省略path--dso-one
+  application:
+    name: myGateWay
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.72.80:7900/eureka/
+server:
+  port: 80
+
+

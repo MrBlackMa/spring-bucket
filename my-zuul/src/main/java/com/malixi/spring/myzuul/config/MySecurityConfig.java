@@ -59,7 +59,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         // 前置fileter  全部从这个走
         http.addFilterBefore(new CodeFilter(), UsernamePasswordAuthenticationFilter.class);
-       // http.addFilterBefore(new RequestFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(new RequestFilter(), UsernamePasswordAuthenticationFilter.class);
         String pass1 = new BCryptPasswordEncoder().encode("123");
         String pass2 = new BCryptPasswordEncoder().encode("123");
         System.out.println("pass1:" + pass1);
