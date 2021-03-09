@@ -14,9 +14,20 @@ spring:
 eureka:
   server:
     enable-self-preservation: false # 关闭自我保护机制
+     # 自我保护的阈值为0.85
+    renewal-percent-threshold: 0.85
     #此配置建议只试用开发和测试环境
-    #驱逐下线的服务，间隔,5秒，默认是60
+    #驱逐下线的服务，间隔,5秒，默认是60 定期的将没有心跳的服务剔除 （如果剔除的比较慢，客户端可能会拉取到不可用的服务）
+    # 用的timer-schedule  运行多个TimerTask的时候 如果其中一个没有捕获抛出异常 其他timer也会停止 用ScheduleExecuteService 代替
     eviction-interval-timer-in-ms: 30000
+    # 多级缓存 默认是true  register readWriteCacheMap readOnlyCacheMap  三级缓存  注
+    # ReadWriteMap->ReadOnly 是一个定时任务  定时的把readWriteMap的数据拿到ReadOnly
+    # ReadWriteCacheMap 里面的数据会在新注册的数据进register的时候失效
+    # 基于内存的 ConcurrentMap
+    use-read-only-response-cache: false # 默认是true 设置为false 直接从readWriteCacheMap里面读
+    # 三级缓存 从二级缓存里面取数据的时候  默认是30秒  可以设置为1秒  提升可用服务的速度
+    response-cache-update-interval-ms: 1000
+
   instance:
     hostname: 192.168.72.80
   client:
