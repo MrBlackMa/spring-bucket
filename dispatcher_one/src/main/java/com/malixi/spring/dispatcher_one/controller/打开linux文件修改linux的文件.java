@@ -10,39 +10,13 @@ public class 打开linux文件修改linux的文件 {
 
     public static void main(String[] args) {
         String redisIP = getRedisIP(); // 从Redis获取IP
-        String configFile = "/path/to/stunnel.conf"; // stunnel.conf文件路径
+        String configFile = "/etc/stunnel/stunnel.conf"; // stunnel.conf文件路径
         modifyStunnelConfig(configFile, redisIP); // 修改stunnel.conf文件
-        executeShellScript("/path/to/stunnel.sh"); // 执行stunnel.sh脚本
+        executeShellScript("/usr/malixi/stunnel.sh"); // 执行stunnel.sh脚本
     }
 
     private static String getRedisIP() {
-        String redisHost = "45.200.57.4"; // Redis服务器地址
-        int redisPort = 6379; // Redis服务器端口号
-        String redisPassword = "malixi"; // Redis服务器密码
-        int redisTimeout = 2000; // 连接Redis超时时间
-        String value="";
-
-        // 配置Jedis连接池
-        JedisPoolConfig poolConfig = new JedisPoolConfig();
-        poolConfig.setMaxTotal(10);
-        poolConfig.setMaxIdle(5);
-
-        // 创建Jedis连接池
-        JedisPool jedisPool = new JedisPool(poolConfig, redisHost, redisPort, redisTimeout, redisPassword);
-
-        try (Jedis jedis = jedisPool.getResource()) {
-            // 从Redis的map中获取value值
-             value = jedis.hget("adsl", "adsl22");
-
-            // 打印获取的value值
-            System.out.println("Value: " + value);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            // 关闭Jedis连接池
-            jedisPool.close();
-        }
-        return value;
+       return "";
     }
 
     private static void modifyStunnelConfig(String configFile, String redisIP) {

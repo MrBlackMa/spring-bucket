@@ -1,8 +1,13 @@
 package com.malixi.spring.dispatcher_one.controller;
 
+
+
+
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
+
+import java.time.Duration;
 
 public class 从redis里面获取map的值 {
     public static void main(String[] args) {
@@ -15,9 +20,14 @@ public class 从redis里面获取map的值 {
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         poolConfig.setMaxTotal(10);
         poolConfig.setMaxIdle(5);
+        // 设置最小空闲时间为 5 分钟
+//        Duration minEvictableIdleTime = Duration.ofMinutes(5);
+//        poolConfig.setMinEvictableIdleTime(minEvictableIdleTime);
 
         // 创建Jedis连接池
         JedisPool jedisPool = new JedisPool(poolConfig, redisHost, redisPort, redisTimeout, redisPassword);
+
+
 
         try (Jedis jedis = jedisPool.getResource()) {
             // 从Redis的map中获取value值
