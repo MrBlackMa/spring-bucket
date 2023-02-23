@@ -48,24 +48,33 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- 引入sleuth和zipkin依赖 链路追踪 -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.18</version>
+			<scope>provided</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-sleuth</artifactId>
-		</dependency>
+
+		<!-- 引入sleuth和zipkin依赖 链路追踪 -->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-zipkin</artifactId>-->
+<!--		</dependency>-->
+
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-sleuth</artifactId>-->
+<!--		</dependency>-->
 		<!-- 引入sleuth和zipkin依赖结束 -->
 
 		<!--引用spring admin健康上报  2.3.1里面包含了actuator-->
-		<dependency>
-			<groupId>de.codecentric</groupId>
-			<artifactId>spring-boot-admin-starter-client</artifactId>
-			<version>2.3.1</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>de.codecentric</groupId>-->
+<!--			<artifactId>spring-boot-admin-starter-client</artifactId>-->
+<!--			<version>2.3.1</version>-->
+<!--		</dependency>-->
 		<!--引用spring admin健康上报结束 -->
 	</dependencies>
 

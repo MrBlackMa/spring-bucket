@@ -1,0 +1,10 @@
+
+a
+java:S1128
+"DRemove this unused import 'java.util.concurrent.ThreadPoolExecutor'.(¦ÿöÊ8–ƒßÑŠ/
+{
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "object".(½ïÈâ8–ƒßÑŠ/
+]	java:S125"<This block of commented-out lines of code should be removed.(±è°œıÿÿÿÿ8–ƒßÑŠ/
+[
+java:S3400%"9Remove this method and declare a constant for this value.(é†“üûÿÿÿÿ8–ƒßÑŠ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(à‰Ãáüÿÿÿÿ8–ƒßÑŠ/

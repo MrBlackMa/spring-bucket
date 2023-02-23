@@ -20,7 +20,7 @@ public class TemplateHystrix {
     @Autowired
     RestTemplate restTemplate;
 
-    @HystrixCommand(fallbackMethod = "back")
+        @HystrixCommand(fallbackMethod = "back")
         public String getOrderInfo2() {
         //ExecutorService executorService = Executors.newCachedThreadPool();
         System.out.println("service+bbb");

@@ -17,35 +17,280 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="换成了 spring">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestSecurityVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/src/main/java/com/malixi/spring/myzuul/MyZuulApplication2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/src/main/java/com/malixi/spring/myzuul/controller/CsrfControoler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/src/main/resources/templates/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/src/test/java/com/malixi/spring/myzuul/MyZuulApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/controller/CsrfControoler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-zuul2/target/test-classes/com/malixi/spring/myzuul/MyZuulApplicationTests.class" afterDir="false" />
+    <list default="true" id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="seata-at 分布式事务模式 ，需要导入undo.log sql">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b989b782-efe1-4a1a-92ef-31fbc9e3a3a8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b989b782-efe1-4a1a-92ef-31fbc9e3a3a8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/0267e48c453d5357382bf772fc28658f4fa80e69" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05bcc05e5f26a17866f292632c5a6c6abb184a94" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/226d0d1723c93170208db04cea5dd7c55f1da705" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22e05a20c2a1fe7d0bacbcb60228e85099ac7067" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/306e2748cfc41d523235b43b96fcd5d5c0ca6bc8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/4959761816d2b912895d14c73f28c682c8778051" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c387192594cb83150a8e2b37389a3431236f0aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/572dd036b9116c9026a4c469f15fc97f987b7837" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86b8aaf834cba185ade46f12dacd5bafa9596900" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9365c40c992bfc77ee18e727a3e966871c3e1617" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9993ba3f0f31b81899442c1dab0520b424c2e25e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99f78a40a497142b281d418ec86bbe5f30f8ad3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a342460e50eaf498ac680cb30c681a3a35ad1efb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb1d81862c7298ea84af90ececf9e60a09855cd7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e45937e01401c3f8474d82a059d5a6484dd6306e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6f886473847aed09650f7299cc0718a965ac586" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f09523088041b9f2c93f8eabf13037c7c6ca3e72" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3abbd06c09d7736717468833d672fa182fee80d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9af939a6cebe5b14421f29fd82dbf084d18d003" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/ABC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/ABC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/ABC3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/Bground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TheInterview/src/main/java/Interview/day1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ali-sentinel/src/main/java/com/malixi/spring/alisentinel/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ali-sentinel/src/main/java/com/malixi/spring/alisentinel/SentinelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ali-sentinel/src/main/java/com/malixi/spring/alisentinel/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-jar-one/src/main/java/com/malixi/spring/apijarone/api/MyThreadPoolExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/从redis里面获取map的值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/模拟浏览器请求获取内容.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/douyin/Pornhub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/douyin/VideoParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/entity/DemoEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/douyin/Pornhub.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/douyin/VideoParse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/spring/malixi/eurekaserver/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/java/com/mashibing/lcnorder/LcnOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/java/com/mashibing/lcnorder/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/java/com/mashibing/lcnorder/dao/TblOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/java/com/mashibing/lcnorder/entity/TblOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-order/src/main/resources/mapper/TblOrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/java/com/mashibing/lcnpay/LcnPayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/java/com/mashibing/lcnpay/controller/PayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/java/com/mashibing/lcnpay/dao/TblPayDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/java/com/mashibing/lcnpay/entity/TblPay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-pay/src/main/resources/mapper/TblPayDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-tm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-tm/src/main/java/com/mashibing/lcntm/LcnTmApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lcn-tm/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/filter/AuthFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-zuul2/src/main/java/com/malixi/spring/myzuul/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/filter/AuthFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata-two/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel-gateway/src/main/java/com/malixi/SpringGatewaySeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentinel-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/dao/MyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/service/MyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service2/src/test/java/com/malixi/spring/service2/MyServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/src/main/java/com/malixi/springgateway/springgateway/MainDai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/src/main/java/com/malixi/springgateway/springgateway/custom/MyRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/src/main/java/com/malixi/springgateway/springgateway/filter/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/target/classes/com/malixi/springgateway/springgateway/MainDai.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/target/classes/com/malixi/springgateway/springgateway/custom/MyRule.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gateway/target/classes/com/malixi/springgateway/springgateway/filter/MyFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis-cluster/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis-cluster/src/main/java/com/malixi/spring/SpringRedisClusterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis-cluster/src/main/java/com/malixi/spring/config/RedisClusterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis-cluster/src/main/java/com/malixi/spring/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis-cluster/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali-sentinel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ali-sentinel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali-sentinel/src/main/java/com/malixi/spring/alisentinel/AliSentinelApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ali-sentinel/src/main/java/com/malixi/spring/alisentinel/AliSentinelApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali-sentinel/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ali-sentinel/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali-sentinel/target/classes/com/malixi/spring/alisentinel/AliSentinelApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ali-sentinel/target/classes/com/malixi/spring/alisentinel/AliSentinelApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali-sentinel/target/test-classes/com/malixi/spring/alisentinel/AliSentinelApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/ali-sentinel/target/test-classes/com/malixi/spring/alisentinel/AliSentinelApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/src/test/java/com/malixi/spring/apijarone/ApiJarOneApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/src/test/java/com/malixi/spring/apijarone/ApiJarOneApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/ApiJarOneApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/ApiJarOneApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/OrderApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/OrderApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/OtherApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/OtherApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/UserApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/target/classes/com/malixi/spring/apijarone/api/UserApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-jar-one/target/test-classes/com/malixi/spring/apijarone/ApiJarOneApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-jar-one/target/test-classes/com/malixi/spring/apijarone/ApiJarOneApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_one/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestZuulController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/TestZuulController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/service/TemplateHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/src/main/java/com/malixi/spring/dispatcher_one/service/TemplateHystrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/DispatcherOneApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/DispatcherOneApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OrderApiJar.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OrderApiJar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OtherApiJar.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/OtherApiJar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/UserApiJar.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/UserApiJar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/UserRestApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/api/UserRestApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/config/LoggingClientHttpRequestInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/config/LoggingClientHttpRequestInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestFeignController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestFeignController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRestTemplateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRestTemplateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRestTemplateHysTrixController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRestTemplateHysTrixController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRibbonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestRibbonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestSecurityVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestSecurityVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestZuulController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/controller/TestZuulController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server3/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/malixi-springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/HystrixTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/HystrixTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/AliveBack.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/AliveBack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/main/hsytirx/exception/OrderBackFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/service/TemplateHystrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/classes/com/malixi/spring/dispatcher_one/service/TemplateHystrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_one/target/test-classes/com/malixi/spring/dispatcher_one/DispatcherOneApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_one/target/test-classes/com/malixi/spring/dispatcher_one/DispatcherOneApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/api/OrderApiJar.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/api/OrderApiJar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/controller/TestZuulController.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/controller/TestZuulController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/HystrixTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/HystrixTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/exception/OrderBackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/exception/OrderBackFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/exception/OrderBackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/classes/com/malixi/spring/dispatcher_two/hsytirx/exception/OrderBackFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dispatcher_two/target/test-classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/dispatcher_two/target/test-classes/com/malixi/spring/dispatcher_two/DispatcherTwoApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server2/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server2/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server2/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server2/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/src/main/resources/application-euk1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/src/main/resources/application-euk1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/target/classes/application-euk1.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/target/classes/application-euk1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication3.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/target/classes/com/spring/malixi/eurekaserver/EurekaServerApplication3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server3/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server3/target/test-classes/com/spring/malixi/eurekaserver/EurekaServerApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/application-test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application-test.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotationClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/annotation/MyAnnotationClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DataSourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSourceContextHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/DynamicDataSourceContextHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig$NativeLocaleResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig$NativeLocaleResolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/config/i18n/MyConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/AliveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/AliveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HellowordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/HellowordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/TestFeignServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/TestFeignServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/TestFeignServiceController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/controller/TestFeignServiceController3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/dao/HelloDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/dao/HelloDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/domain/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/domain/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/DataSourceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/DataSourceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/entity/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/eureka/HealthStatusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/eureka/HealthStatusService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/controller/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/IPersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/IPersonDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/dao/impl/PersonDaoImpl2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/IPersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/IPersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/impl/IPersonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/ioc/service/impl/IPersonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/service/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/service/HelloService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/service/impl/HelloServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/com/malixi/springboot/malixispringboot/service/impl/HelloServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/i18n/login_zh_CN.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/static/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/static/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/DataApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/DataApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/malixi-springboot/target/test-classes/com/malixi/springboot/malixispringboot/MalixiSpringbootApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-spring-admin/target/classes/com/malixi/spring/myspringadmin/MySpringAdminApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-spring-admin/target/classes/com/malixi/spring/myspringadmin/MySpringAdminApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-spring-admin/target/test-classes/com/malixi/spring/myspringadmin/MySpringAdminApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-spring-admin/target/test-classes/com/malixi/spring/myspringadmin/MySpringAdminApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/config/MySecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/filter/RequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/src/main/java/com/malixi/spring/myzuul/filter/RequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-session-redis-boot37/src/main/java/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-session-redis-boot37/src/main/java/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/application-database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/application-database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/MyZuulApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/MyZuulApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/common/JSONResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/common/JSONResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/common/TokenStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/common/TokenStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/DruidConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/DruidConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/Kaconfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/Kaconfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/config/MySecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/controller/CsrfControoler.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/controller/CsrfControoler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Authorities.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Authorities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Authorities2.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Authorities2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/entity/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/filter/CodeFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/filter/CodeFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/filter/RequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/filter/RequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/mapper/MyUserServiceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/mapper/MyUserServiceMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/service/MyAuthProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/service/MyAuthProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/service/MyDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/service/MyDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/utils/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/com/malixi/spring/myzuul/utils/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/mapper/Users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/mapper/Users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/templates/UserNpError.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/templates/UserNpError.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/classes/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/classes/templates/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/test-classes/com/malixi/spring/myzuul/DataSourceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/test-classes/com/malixi/spring/myzuul/DataSourceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul/target/test-classes/com/malixi/spring/myzuul/MyZuulApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul/target/test-classes/com/malixi/spring/myzuul/MyZuulApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/src/main/java/com/malixi/spring/myzuul/MyZuulApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/src/main/java/com/malixi/spring/myzuul/MyZuulApplication2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/MyZuulApplication2.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/MyZuulApplication2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/controller/CsrfControoler.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/target/classes/com/malixi/spring/myzuul/controller/CsrfControoler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/target/classes/templates/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/target/classes/templates/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-zuul2/target/test-classes/com/malixi/spring/myzuul/MyZuulApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/my-zuul2/target/test-classes/com/malixi/spring/myzuul/MyZuulApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/ServiceOrderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/ServiceOrderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/config/ActiveMQConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/config/ActiveMQConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/dao/TblOrderEventDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/dao/TblOrderEventDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/entity/TblOrderEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/entity/TblOrderEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/task/ProduceTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/com/mashibing/serviceorder/task/ProduceTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order/target/classes/mapper/TblOrderEventDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order/target/classes/mapper/TblOrderEventDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/ServicePayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/ServicePayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/component/ConsumerQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/component/ConsumerQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/config/ActiveMQConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/config/ActiveMQConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/dao/TblOrderEventDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/dao/TblOrderEventDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/entity/TblOrderEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/com/mashibing/servicepay/entity/TblOrderEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-pay/target/classes/mapper/TblOrderEventDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-pay/target/classes/mapper/TblOrderEventDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/controller/AliveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/controller/AliveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/Service2Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/Service2Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/AliveController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/AliveController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/HellowordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/HellowordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/TestFeignServiceController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/TestFeignServiceController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/TestFeignServiceController3.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/controller/TestFeignServiceController3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/entity/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/classes/com/malixi/spring/service2/entity/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service2/target/test-classes/com/malixi/spring/service2/Service2ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/service2/target/test-classes/com/malixi/spring/service2/Service2ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareding-jdbc-nospring/target/classes/com/malixi/jdbc/SharedingJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/shareding-jdbc-nospring/target/classes/com/malixi/jdbc/SharedingJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gateway/src/main/java/com/malixi/springgateway/springgateway/SpringGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gateway/src/main/java/com/malixi/springgateway/springgateway/SpringGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gateway/target/classes/com/malixi/springgateway/springgateway/SpringGatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gateway/target/classes/com/malixi/springgateway/springgateway/SpringGatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gateway/target/test-classes/com/malixi/springgateway/springgateway/SpringGatewayApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gateway/target/test-classes/com/malixi/springgateway/springgateway/SpringGatewayApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/com/malixi/spring/springsessionredisboot37/config/HttpSessionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-session-redis-boot37/target/classes/com/malixi/spring/springsessionredisboot37/config/HttpSessionConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-session-redis-boot37/target/test-classes/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-session-redis-boot37/target/test-classes/com/malixi/spring/springsessionredisboot37/SpringSessionRedisBoot37ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/SpringShardingjdbcApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/SpringShardingjdbcApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/DictOrderType.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/DictOrderType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/bean/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/mapper/OrdersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/classes/com/malixi/spring/shardingjdbc/mapper/OrdersMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-shardingjdbc/target/test-classes/com/malixi/spring/shardingjdbc/MalixiSpringbootApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-shardingjdbc/target/test-classes/com/malixi/spring/shardingjdbc/MalixiSpringbootApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +305,7 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -67,13 +313,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\MyWorker\Maven\MavenRepository" />
-        <option name="mavenHome" value="D:\MyWorker\Maven\apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\MyWorker\Maven\apache-maven-3.6.3\conf\settings.xml" />
+        <option name="mavenHome" value="D:\MyWorker\Maven\apache-maven-3.6.3-bucket" />
+        <option name="userSettingsFile" value="D:\MyWorker\Maven\apache-maven-3.6.3-bucket\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="jdk-8" />
+      </list>
     </option>
   </component>
   <component name="ProjectId" id="1kokCq4eCKvzxRK59rW1tPbzgOr" />
@@ -85,6 +339,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -96,12 +351,14 @@
     <property name="ToolWindowFavorites.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../培训学习笔记/Spring系列教程/spring_cloud三期内容/20 架构师三期 SpringCloud微服务架构/代码/JWT-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.25280327" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -114,27 +371,27 @@
       <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\malixi-springboot\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.malixi" />
+      <recent name="" />
+      <recent name="controller" />
+      <recent name="com.malixi.spring.myzuul.filter" />
       <recent name="com.malixi.spring.myzuul.entity" />
-      <recent name="com.malixi.spring.myzuul" />
-      <recent name="com.malixi.spring.dispatcher_two.api" />
-      <recent name="com.malixi.spring.dispatcher_two.controller" />
-      <recent name="com.malixi.spring.dispatcher_one.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\my-zuul\src\main\java\com\malixi\spring\myzuul" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\spring-session-redis\src\main\java\com\malixi\spring\springsessionredis\demo" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\my-zuul\src\main\java\com\malixi\spring\myzuul\config" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\my-zuul\src\main\java\com\malixi\spring\myzuul\filter" />
-      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\my-zuul\src\main\resources\templates" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\sentinel-gateway\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\ali-sentinel\src\main\java\com\malixi\spring\alisentinel" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\seata-one\src\main\resources" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\.txlcn" />
+      <recent name="D:\MyWorker\IDEA\ideProjects\spring-bucket\seata-one\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DispatcherOneApplication">
-    <configuration name="JwtUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.myzuul.utils.JwtUtil" />
-      <module name="my-zuul" />
+  <component name="RunManager" selected="Application.从redis里面获取map的值">
+    <configuration name="模拟浏览器请求获取内容" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.dispatcher_one.controller.模拟浏览器请求获取内容" />
+      <module name="dispatcher_one" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.myzuul.utils.*" />
+          <option name="PATTERN" value="com.malixi.spring.dispatcher_one.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,12 +399,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.myzuul.TestMain" />
-      <module name="my-zuul" />
+    <configuration name="从redis里面获取map的值" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.dispatcher_one.controller.从redis里面获取map的值" />
+      <module name="dispatcher_one" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.myzuul.*" />
+          <option name="PATTERN" value="com.malixi.spring.dispatcher_one.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,45 +412,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="malixi-springboot" />
+    <configuration name="MyServiceTest.testInjectMocks2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.springboot.malixispringboot.*" />
+          <option name="PATTERN" value="com.malixi.spring.service2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.springboot.malixispringboot" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.springboot.malixispringboot.DataApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.malixi.spring.service2" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.service2.MyServiceTest" />
+      <option name="METHOD_NAME" value="testInjectMocks2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataSourceTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="my-zuul" />
+    <configuration name="UserServiceTest.testInjectMocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.malixi.spring.myzuul.*" />
+          <option name="PATTERN" value="com.malixi.spring.service2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.malixi.spring.myzuul" />
-      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.myzuul.DataSourceTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.malixi.spring.service2" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.service2.UserServiceTest" />
+      <option name="METHOD_NAME" value="testInjectMocks" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.testInjectMocks2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.malixi.spring.service2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.malixi.spring.service2" />
+      <option name="MAIN_CLASS_NAME" value="com.malixi.spring.service2.UserServiceTest" />
+      <option name="METHOD_NAME" value="testInjectMocks2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AliSentinelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ali-sentinel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.alisentinel.AliSentinelApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,6 +515,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LcnOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lcn-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.lcnorder.LcnOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LcnPayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lcn-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.lcnpay.LcnPayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LcnTmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lcn-tm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.lcntm.LcnTmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MalixiSpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="malixi-springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.springboot.malixispringboot.MalixiSpringbootApplication" />
@@ -254,15 +557,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyZuulApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MyZuulApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my-zuul2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.malixi.spring.myzuul.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.myzuul.MyZuulApplication2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="seata-one" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.one.OneApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -270,6 +574,20 @@
     <configuration name="Service2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.service2.Service2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.serviceorder.ServiceOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServicePayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mashibing.servicepay.ServicePayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -284,6 +602,13 @@
     <configuration name="SpringGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.springgateway.springgateway.SpringGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringRedisClusterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-redis-cluster" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.malixi.spring.SpringRedisClusterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,15 +636,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtUtil" />
-        <item itemvalue="Application.TestMain" />
-        <item itemvalue="JUnit.DataSourceTest.contextLoads" />
-        <item itemvalue="JUnit.DataApplicationTests.contextLoads" />
-        <item itemvalue="Spring Boot.MyZuulApplication2" />
+        <item itemvalue="Application.从redis里面获取map的值" />
+        <item itemvalue="Application.模拟浏览器请求获取内容" />
+        <item itemvalue="JUnit.MyServiceTest.testInjectMocks2" />
+        <item itemvalue="JUnit.UserServiceTest.testInjectMocks2" />
+        <item itemvalue="JUnit.UserServiceTest.testInjectMocks" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\malixi\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="989f0dc2-148b-465c-95f1-d2c6caff5366" name="Default Changelist" comment="" />
@@ -376,7 +704,63 @@
       <workItem from="1609595935054" duration="6072000" />
       <workItem from="1609685301815" duration="15533000" />
       <workItem from="1609834104227" duration="15000" />
-      <workItem from="1609834848303" duration="14862000" />
+      <workItem from="1609834848303" duration="15151000" />
+      <workItem from="1609998889886" duration="2266000" />
+      <workItem from="1610178801945" duration="7280000" />
+      <workItem from="1610366717994" duration="2981000" />
+      <workItem from="1611119482277" duration="310000" />
+      <workItem from="1611121649636" duration="19000" />
+      <workItem from="1611123482515" duration="12291000" />
+      <workItem from="1611252440511" duration="4964000" />
+      <workItem from="1611299111559" duration="5313000" />
+      <workItem from="1611832202706" duration="1229000" />
+      <workItem from="1612956488031" duration="1068000" />
+      <workItem from="1613719409315" duration="5114000" />
+      <workItem from="1613724739636" duration="30021000" />
+      <workItem from="1613986886289" duration="12000" />
+      <workItem from="1613989990390" duration="8000" />
+      <workItem from="1614140732296" duration="5512000" />
+      <workItem from="1614492700328" duration="11660000" />
+      <workItem from="1614579765806" duration="8797000" />
+      <workItem from="1614597497443" duration="8690000" />
+      <workItem from="1614652547603" duration="10953000" />
+      <workItem from="1614666835173" duration="41000" />
+      <workItem from="1614674978612" duration="1990000" />
+      <workItem from="1614738839245" duration="1787000" />
+      <workItem from="1614762631410" duration="4687000" />
+      <workItem from="1614855172514" duration="9005000" />
+      <workItem from="1615199103674" duration="12203000" />
+      <workItem from="1615638827675" duration="6064000" />
+      <workItem from="1615727201764" duration="7834000" />
+      <workItem from="1615820217604" duration="3524000" />
+      <workItem from="1616161484094" duration="825000" />
+      <workItem from="1616725453688" duration="1296000" />
+      <workItem from="1617009177117" duration="2714000" />
+      <workItem from="1617067350446" duration="1231000" />
+      <workItem from="1617079370706" duration="159000" />
+      <workItem from="1617079544015" duration="9000" />
+      <workItem from="1617094896803" duration="989000" />
+      <workItem from="1617097269812" duration="11000" />
+      <workItem from="1617098497210" duration="57000" />
+      <workItem from="1617098627274" duration="614000" />
+      <workItem from="1617100499850" duration="595000" />
+      <workItem from="1617101257777" duration="4000" />
+      <workItem from="1617115797598" duration="1190000" />
+      <workItem from="1617174126093" duration="1120000" />
+      <workItem from="1617175574405" duration="341000" />
+      <workItem from="1617180363057" duration="1794000" />
+      <workItem from="1617763336262" duration="10956000" />
+      <workItem from="1620446810168" duration="2084000" />
+      <workItem from="1620475320459" duration="381000" />
+      <workItem from="1671268346752" duration="3448000" />
+      <workItem from="1671286716666" duration="762000" />
+      <workItem from="1671346197438" duration="438000" />
+      <workItem from="1671347572514" duration="82000" />
+      <workItem from="1671359938293" duration="1741000" />
+      <workItem from="1675606941450" duration="3046000" />
+      <workItem from="1676729691323" duration="838000" />
+      <workItem from="1676899888463" duration="2706000" />
+      <workItem from="1677141652018" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="spring cloud 全家桶">
       <created>1607673450364</created>
@@ -588,7 +972,49 @@
       <option name="project" value="LOCAL" />
       <updated>1609838009693</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="添加spring  gateway 组件">
+      <created>1609927564279</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609927564279</updated>
+    </task>
+    <task id="LOCAL-00032" summary="消息队列 分布式柔性事务">
+      <created>1613828461774</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1613828461774</updated>
+    </task>
+    <task id="LOCAL-00033" summary="消息队列 分布式柔性事务">
+      <created>1613828470999</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1613828470999</updated>
+    </task>
+    <task id="LOCAL-00034" summary="seata-at 分布式事务模式 ，需要导入undo.log sql">
+      <created>1614602196753</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614602196753</updated>
+    </task>
+    <task id="LOCAL-00035" summary="sentinel限流器">
+      <created>1614602232498</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614602232498</updated>
+    </task>
+    <task id="LOCAL-00036" summary="EurekaServer  生产优化配置">
+      <created>1615299027289</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1615299027289</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,157 +1062,57 @@
     <MESSAGE value="spring 集群 session 共享" />
     <MESSAGE value="加入了jwt" />
     <MESSAGE value="eureka 客户端优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka 客户端优化" />
+    <MESSAGE value="添加spring  gateway 组件" />
+    <MESSAGE value="消息队列 分布式柔性事务" />
+    <MESSAGE value="seata-at 分布式事务模式 ，需要导入undo.log sql" />
+    <MESSAGE value="sentinel限流器" />
+    <MESSAGE value="EurekaServer  生产优化配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="EurekaServer  生产优化配置" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1606381676305">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state x="634" y="269" key="FileChooserDialogImpl" timestamp="1671278450087">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.760@0.0.1280.760" timestamp="1606381676305" />
-    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609148272226">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state x="634" y="269" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1671278450087" />
+    <state width="1663" height="285" key="GridCell.Tab.0.bottom" timestamp="1677143230978">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="371" y="181" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1609148272226" />
-    <state x="330" y="79" width="681" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1609696683764">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state width="1663" height="285" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1677143230978" />
+    <state width="1663" height="285" key="GridCell.Tab.0.center" timestamp="1677143230978">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="330" y="79" width="681" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1609696683764" />
-    <state x="137" y="303" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609699754173">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state width="1663" height="285" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1677143230978" />
+    <state width="1663" height="285" key="GridCell.Tab.0.left" timestamp="1677143230978">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="137" y="303" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.760@0.0.1280.760" timestamp="1609699754173" />
-    <state x="372" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608627631040">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state width="1663" height="285" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1677143230978" />
+    <state width="1663" height="285" key="GridCell.Tab.0.right" timestamp="1677143230978">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="372" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.760@0.0.1280.760" timestamp="1608627631040" />
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607500555712">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state width="1663" height="285" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1677143230978" />
+    <state x="355" y="158" key="SettingsEditor" timestamp="1671347653989">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="371" y="127" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.760@0.0.1280.760" timestamp="1607500555712" />
-    <state x="371" y="127" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1606478236609">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state x="355" y="158" key="SettingsEditor/0.0.1707.1027@0.0.1707.1027" timestamp="1671347653989" />
+    <state x="552" y="245" width="672" height="536" key="find.popup" timestamp="1677143323452">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="371" y="127" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.760@0.0.1280.760" timestamp="1606478236609" />
-    <state x="326" y="216" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609692077963">
-      <screen x="0" y="0" width="1280" height="760" />
+    <state x="552" y="245" width="672" height="536" key="find.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1677143323452" />
+    <state x="516" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1676900114511">
+      <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="326" y="216" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1609692077963" />
-    <state x="-117" y="-1" key="CommitChangelistDialog2" timestamp="1609838008809">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="-117" y="-1" key="CommitChangelistDialog2/0.0.1280.760@0.0.1280.760" timestamp="1609838008809" />
-    <state width="694" height="466" key="DebuggerActiveHint" timestamp="1609697432814">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="694" height="466" key="DebuggerActiveHint/0.0.1280.760@0.0.1280.760" timestamp="1609697432814" />
-    <state x="93" y="93" width="1093" height="573" key="DiffContextDialog" timestamp="1609698638633">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="93" y="93" width="1093" height="573" key="DiffContextDialog/0.0.1280.760@0.0.1280.760" timestamp="1609698638633" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1609699839956">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1609699839956" />
-    <state width="1238" height="221" key="GridCell.Tab.0.bottom" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.0.center" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.0.left" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.0.right" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom" timestamp="1609926333656">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1609926333656" />
-    <state width="1238" height="221" key="GridCell.Tab.1.center" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.1.left" timestamp="1609926333655">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1609926333655" />
-    <state width="1238" height="221" key="GridCell.Tab.1.right" timestamp="1609926333656">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="221" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1609926333656" />
-    <state width="1238" height="181" key="GridCell.Tab.2.bottom" timestamp="1609924964032">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="181" key="GridCell.Tab.2.bottom/0.0.1280.760@0.0.1280.760" timestamp="1609924964032" />
-    <state width="1238" height="181" key="GridCell.Tab.2.center" timestamp="1609924964032">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="181" key="GridCell.Tab.2.center/0.0.1280.760@0.0.1280.760" timestamp="1609924964032" />
-    <state width="1238" height="181" key="GridCell.Tab.2.left" timestamp="1609924964032">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="181" key="GridCell.Tab.2.left/0.0.1280.760@0.0.1280.760" timestamp="1609924964032" />
-    <state width="1238" height="181" key="GridCell.Tab.2.right" timestamp="1609924964032">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="1238" height="181" key="GridCell.Tab.2.right/0.0.1280.760@0.0.1280.760" timestamp="1609924964032" />
-    <state x="221" y="115" key="IDE.errors.dialog" timestamp="1606401200139">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="221" y="115" key="IDE.errors.dialog/0.0.1280.760@0.0.1280.760" timestamp="1606401200139" />
-    <state x="287" y="84" key="NewModule_or_Project.wizard" timestamp="1609474553760">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="287" y="84" key="NewModule_or_Project.wizard/0.0.1280.760@0.0.1280.760" timestamp="1609474553760" />
-    <state x="219" y="198" width="841" height="518" key="Registry" timestamp="1606379159291">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="219" y="198" width="841" height="518" key="Registry/0.0.1280.760@0.0.1280.760" timestamp="1606379159291" />
-    <state x="301" y="82" key="RollbackChangesDialog" timestamp="1609696338171">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="301" y="82" key="RollbackChangesDialog/0.0.1280.760@0.0.1280.760" timestamp="1609696338171" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1609601600255">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1609601600255" />
-    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1609699977145">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="233" y="113" width="800" height="532" key="Vcs.Push.Dialog.v2/0.0.1280.760@0.0.1280.760" timestamp="1609699977145" />
-    <state x="73" y="89" width="1093" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609696685574">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="73" y="89" width="1093" height="573" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.760@0.0.1280.760" timestamp="1609696685574" />
-    <state x="251" y="129" width="632" height="536" key="find.popup" timestamp="1609922495842">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="251" y="129" width="632" height="536" key="find.popup/0.0.1280.760@0.0.1280.760" timestamp="1609922495842" />
-    <state x="254" y="272" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1609691305451">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="254" y="272" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1280.760@0.0.1280.760" timestamp="1609691305451" />
-    <state x="411" y="278" key="git4idea.ui.GitStashDialog" timestamp="1609691295386">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="411" y="278" key="git4idea.ui.GitStashDialog/0.0.1280.760@0.0.1280.760" timestamp="1609691295386" />
-    <state x="14" y="83" key="new project wizard" timestamp="1609922696240">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="14" y="83" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1609922696240" />
-    <state x="318" y="91" width="672" height="677" key="run.anything.popup" timestamp="1609331730997">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="318" y="91" width="672" height="677" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1609331730997" />
-    <state x="427" y="175" width="672" height="678" key="search.everywhere.popup" timestamp="1609922469369">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="427" y="175" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1609922469369" />
+    <state x="516" y="222" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1676900114511" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service2/src/main/java/com/malixi/spring/service2/dao/MyRepository.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_bucket$SessionRedisApplication.ic" NAME="SessionRedisApplication Coverage Results" MODIFIED="1609327571299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

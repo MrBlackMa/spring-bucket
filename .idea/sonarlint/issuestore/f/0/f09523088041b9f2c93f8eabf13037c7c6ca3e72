@@ -1,0 +1,13 @@
+
+K	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(î¦Žñ
+O	java:S125"<This block of commented-out lines of code should be removed.(“¿¦ 
+L	java:S106"9Replace this use of System.out or System.err by a logger.(—„ƒ´
+L	java:S106"9Replace this use of System.out or System.err by a logger.(öÑÃ
+L	java:S106"9Replace this use of System.out or System.err by a logger.(öÑÃ
+]
+java:S1192"IDefine a constant instead of duplicating this literal "provider" 3 times.(¶¨Ã
+L	java:S106"9Replace this use of System.out or System.err by a logger.(ý€í–
+L	java:S106"9Replace this use of System.out or System.err by a logger.(—„ƒ´
+L	java:S106"9Replace this use of System.out or System.err by a logger.(ûí×É

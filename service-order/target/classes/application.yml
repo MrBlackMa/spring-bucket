@@ -2,7 +2,7 @@
 server:
   port: 5001
 
-#åº”ç”¨åç§°åŠéªŒè¯è´¦å·
+#Ó¦ÓÃÃû³Æ¼°ÑéÖ¤ÕËºÅ
 spring:
   application:
     name: service-order

@@ -1,30 +1,45 @@
 spring:
-  #å¼€å¯å¥åº·ä¸ŠæŠ¥
+  #¿ªÆô½¡¿µÉÏ±¨
   boot:
     admin:
       client:
         url: http://192.168.72.80:8888
   application:
     name: EurekaServer
-    # è®¾ç½®eurekaçš„è®¿é—®è´¦å·å¯†ç 
+    # ÉèÖÃeurekaµÄ·ÃÎÊÕËºÅÃÜÂë
 #  security:
 #    user:
 #      name: malixi
 #      password: malixi
-eureka:
+eureka: # eureka ¶¼ÊÇ»ùÓÚhttpµÄ  ½ÓÊÜ×¢²á£¬½ÓÊÜĞÄÌø ÏÂÏß£¬»ñÈ¡×¢²áÁĞ±í
   server:
-    enable-self-preservation: false # å…³é—­è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶
-    #æ­¤é…ç½®å»ºè®®åªè¯•ç”¨å¼€å‘å’Œæµ‹è¯•ç¯å¢ƒ
-    #é©±é€ä¸‹çº¿çš„æœåŠ¡ï¼Œé—´éš”,5ç§’ï¼Œé»˜è®¤æ˜¯60
+    enable-self-preservation: false # ¹Ø±Õ×ÔÎÒ±£»¤»úÖÆ
+     # ×ÔÎÒ±£»¤µÄãĞÖµÎª0.85
+    renewal-percent-threshold: 0.85
+    #´ËÅäÖÃ½¨ÒéÖ»ÊÔÓÃ¿ª·¢ºÍ²âÊÔ»·¾³
+    #ÇıÖğÏÂÏßµÄ·şÎñ£¬¼ä¸ô,5Ãë£¬Ä¬ÈÏÊÇ60 ¶¨ÆÚµÄ½«Ã»ÓĞĞÄÌøµÄ·şÎñÌŞ³ı £¨Èç¹ûÌŞ³ıµÄ±È½ÏÂı£¬¿Í»§¶Ë¿ÉÄÜ»áÀ­È¡µ½²»¿ÉÓÃµÄ·şÎñ£©
+    # ÓÃµÄtimer-schedule  ÔËĞĞ¶à¸öTimerTaskµÄÊ±ºò Èç¹ûÆäÖĞÒ»¸öÃ»ÓĞ²¶»ñÅ×³öÒì³£ ÆäËûtimerÒ²»áÍ£Ö¹ ÓÃScheduleExecuteService ´úÌæ
     eviction-interval-timer-in-ms: 30000
+    # ¶à¼¶»º´æ Ä¬ÈÏÊÇtrue  register ReadWriteCacheMap readOnlyCacheMap  Èı¼¶»º´æ  ×¢
+    # ReadWriteMap->ReadOnly ÊÇÒ»¸ö¶¨Ê±ÈÎÎñ  ¶¨Ê±µÄ°ÑreadWriteMapµÄÊı¾İÄÃµ½ReadOnly
+    # ReadWriteCacheMap ÀïÃæµÄÊı¾İ»áÔÚĞÂ×¢²áµÄÊı¾İ½øregisterµÄÊ±ºòÊ§Ğ§
+    # »ùÓÚÄÚ´æµÄ ConcurrentMap
+    use-read-only-response-cache: false # Ä¬ÈÏÊÇtrue ÉèÖÃÎªfalse Ö±½Ó´ÓreadWriteCacheMapÀïÃæ¶Á
+    # Eureka A server »á´ÓEureka BÀïÃæÀ­È¡C·şÎñ È»ºóºóÀ´ÓÖÀ´¸öD·şÎñ×¢²áµ½B A ·şÎñÀïÃæÃ»ÓĞ£¬B»áÍÆËÍ·şÎñµ½AÀïÃæ
+    # ÔõÃ´²âËãEurekaServer ÄÜ³ĞÊÜ¶àÉÙµÄ·ÃÎÊÁ¿
+    #  20¸ö·şÎñ   ²»µ÷µÄÇé¿öÏÂ ĞÄÌø30Ãë Ã¿¸ö·şÎñ²¿Êğ5¸ö 100¸ö
+    #  100ÒªÏñserver ×¢²á 1·ÖÖÓÁ½´Î  200´Î   Ã¿¸ö·şÎñÀ­È¡30ÃëÀ­È¡×¢²á»º´æÒ»´Î Ò»¸öĞ¡Ê±ÊÇ28*2ÍòµÄ56ÍòµÄ·ÃÎÊÁ¿
+    # Eureka 0.1Ãë´¦Àí Ò»Íò´ÎµÄÀ­È¡ 1ÃëÖÓ¿ÉÒÔÀ­È¡10Íò´Î  ½µµÍ100±¶ 1ÃëÒ²ÄÜ³ĞÊÜ1000´Î
+    response-cache-update-interval-ms: 1000 # Èı¼¶»º´æ ´Ó¶ş¼¶»º´æÀïÃæÈ¡Êı¾İµÄÊ±ºò  Ä¬ÈÏÊÇ30Ãë  ¿ÉÒÔÉèÖÃÎª1Ãë  ÌáÉı¿ÉÓÃ·şÎñµÄËÙ¶È
+
   instance:
     hostname: 192.168.72.80
   client:
-    #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eureka Server,é»˜è®¤ä¸ºtrueï¼Œç”±äºå½“å‰å°±æ˜¯serverï¼Œæ•…è€Œè®¾ç½®æˆfalseï¼Œè¡¨æ˜è¯¥æœåŠ¡ä¸ä¼šå‘eurekaæ³¨å†Œè‡ªå·±çš„ä¿¡æ¯
+    #ÊÇ·ñ½«×Ô¼º×¢²áµ½Eureka Server,Ä¬ÈÏÎªtrue£¬ÓÉÓÚµ±Ç°¾ÍÊÇserver£¬¹Ê¶øÉèÖÃ³Éfalse£¬±íÃ÷¸Ã·şÎñ²»»áÏòeureka×¢²á×Ô¼ºµÄĞÅÏ¢
     register-with-eureka: true
-    #æ˜¯å¦ä»eureka serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œç”±äºå•èŠ‚ç‚¹ï¼Œä¸éœ€è¦åŒæ­¥å…¶ä»–èŠ‚ç‚¹æ•°æ®ï¼Œç”¨false
+    #ÊÇ·ñ´Óeureka server»ñÈ¡×¢²áĞÅÏ¢£¬ÓÉÓÚµ¥½Úµã£¬²»ĞèÒªÍ¬²½ÆäËû½ÚµãÊı¾İ£¬ÓÃfalse
     fetch-registry: true
-    #è®¾ç½®æœåŠ¡æ³¨å†Œä¸­å¿ƒçš„URLï¼Œç”¨äºclientå’Œserverç«¯äº¤æµ
+    #ÉèÖÃ·şÎñ×¢²áÖĞĞÄµÄURL£¬ÓÃÓÚclientºÍserver¶Ë½»Á÷
     service-url:
       defaultZone: http://192.168.72.81:8000/eureka/
       #defaultZone: http://127.0.0.1:8000/eureka/

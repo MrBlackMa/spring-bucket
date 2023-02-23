@@ -1,0 +1,25 @@
+
+\
+java:S5344¢">Don't use the default "PasswordEncoder" relying on plain-text.(äŒú8–ƒßÑŠ/
+^	java:S125Ÿ"<This block of commented-out lines of code should be removed.(ŸÂãúÿÿÿÿ8–ƒßÑŠ/
+T
+java:S1135z"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8–ƒßÑŠ/
+V	java:S106Ü"9Replace this use of System.out or System.err by a logger.(¬•8–ƒßÑŠ/
+e
+java:S1128	"CRemove this unused import 'com.malixi.spring.myzuul.utils.JwtUtil'.(ú‘±ûÿÿÿÿ8–ƒßÑŠ/
+[	java:S106ã"9Replace this use of System.out or System.err by a logger.(’±…¤ÿÿÿÿÿ8–ƒßÑŠ/
+E
+java:S1604w"(Make this anonymous inner class a lambda(êõÅ‘8–ƒßÑŠ/
+]	java:S125b"<This block of commented-out lines of code should be removed.(¼Öö•şÿÿÿÿ8–ƒßÑŠ/
+Z	java:S106{"9Replace this use of System.out or System.err by a logger.(ï„Ó”ÿÿÿÿÿ8–ƒßÑŠ/
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(¬†ıÏşÿÿÿÿ8–ƒßÑŠ/
+S
+java:S1128+"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8–ƒßÑŠ/
+Y	java:S125À"<This block of commented-out lines of code should be removed.(øõìµ8–ƒßÑŠ/
+]	java:S125p"<This block of commented-out lines of code should be removed.(«›¬İıÿÿÿÿ8–ƒßÑŠ/
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8–ƒßÑŠ/
+U	java:S106A"9Replace this use of System.out or System.err by a logger.(Åè•8–ƒßÑŠ/
+W	java:S125n"<This block of commented-out lines of code should be removed.(’ ÊW8–ƒßÑŠ/
+l
+java:S1128"ORemove this unused import 'org.springframework.security.core.GrantedAuthority'.(½Á±ÿ8–ƒßÑŠ/
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(¿Ã’·ûÿÿÿÿ8–ƒßÑŠ/

@@ -89,7 +89,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 // 在登录成功后会被调起
                 // 用来锁定资源 初始化资源等
                 .successHandler(new AuthenticationSuccessHandler() {
-
                     @Override
                     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                                         Authentication authentication) throws IOException, ServletException {

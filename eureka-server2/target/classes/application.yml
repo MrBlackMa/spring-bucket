@@ -1,30 +1,30 @@
 spring:
-  #å¼€å¯å¥åº·ä¸ŠæŠ¥
+  #¿ªÆô½¡¿µÉÏ±¨
   boot:
     admin:
       client:
         url: http://192.168.72.80:8888
   application:
     name: EurekaServer
-    # è®¾ç½®eurekaçš„è®¿é—®è´¦å·å¯†ç 
+    # ÉèÖÃeurekaµÄ·ÃÎÊÕËºÅÃÜÂë
 #  security:
 #    user:
 #      name: malixi
 #      password: malixi
 eureka:
   server:
-    enable-self-preservation: false # å…³é—­è‡ªæˆ‘ä¿æŠ¤æœºåˆ¶
-    #æ­¤é…ç½®å»ºè®®åªè¯•ç”¨å¼€å‘å’Œæµ‹è¯•ç¯å¢ƒ
-    #é©±é€ä¸‹çº¿çš„æœåŠ¡ï¼Œé—´éš”,5ç§’ï¼Œé»˜è®¤æ˜¯60
+    enable-self-preservation: false # ¹Ø±Õ×ÔÎÒ±£»¤»úÖÆ
+    #´ËÅäÖÃ½¨ÒéÖ»ÊÔÓÃ¿ª·¢ºÍ²âÊÔ»·¾³
+    #ÇıÖğÏÂÏßµÄ·şÎñ£¬¼ä¸ô,5Ãë£¬Ä¬ÈÏÊÇ60
     eviction-interval-timer-in-ms: 30000
   instance:
     hostname: 192.168.72.81
   client:
-    #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°Eureka Server,é»˜è®¤ä¸ºtrueï¼Œç”±äºå½“å‰å°±æ˜¯serverï¼Œæ•…è€Œè®¾ç½®æˆfalseï¼Œè¡¨æ˜è¯¥æœåŠ¡ä¸ä¼šå‘eurekaæ³¨å†Œè‡ªå·±çš„ä¿¡æ¯
+    #ÊÇ·ñ½«×Ô¼º×¢²áµ½Eureka Server,Ä¬ÈÏÎªtrue£¬ÓÉÓÚµ±Ç°¾ÍÊÇserver£¬¹Ê¶øÉèÖÃ³Éfalse£¬±íÃ÷¸Ã·şÎñ²»»áÏòeureka×¢²á×Ô¼ºµÄĞÅÏ¢
     register-with-eureka: true
-    #æ˜¯å¦ä»eureka serverè·å–æ³¨å†Œä¿¡æ¯ï¼Œç”±äºå•èŠ‚ç‚¹ï¼Œä¸éœ€è¦åŒæ­¥å…¶ä»–èŠ‚ç‚¹æ•°æ®ï¼Œç”¨false
+    #ÊÇ·ñ´Óeureka server»ñÈ¡×¢²áĞÅÏ¢£¬ÓÉÓÚµ¥½Úµã£¬²»ĞèÒªÍ¬²½ÆäËû½ÚµãÊı¾İ£¬ÓÃfalse
     fetch-registry: true
-    #è®¾ç½®æœåŠ¡æ³¨å†Œä¸­å¿ƒçš„URLï¼Œç”¨äºclientå’Œserverç«¯äº¤æµ
+    #ÉèÖÃ·şÎñ×¢²áÖĞĞÄµÄURL£¬ÓÃÓÚclientºÍserver¶Ë½»Á÷
     service-url:
       defaultZone: http://192.168.72.80:7900/eureka/
       #defaultZone: http://127.0.0.1:7900/eureka/

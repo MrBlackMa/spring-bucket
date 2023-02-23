@@ -11,7 +11,7 @@ spring:
 #    user:
 #      name: malixi
 #      password: malixi
-eureka:
+eureka: # eureka 都是基于http的  接受注册，接受心跳 下线，获取注册列表
   server:
     enable-self-preservation: false # 关闭自我保护机制
      # 自我保护的阈值为0.85
@@ -20,13 +20,17 @@ eureka:
     #驱逐下线的服务，间隔,5秒，默认是60 定期的将没有心跳的服务剔除 （如果剔除的比较慢，客户端可能会拉取到不可用的服务）
     # 用的timer-schedule  运行多个TimerTask的时候 如果其中一个没有捕获抛出异常 其他timer也会停止 用ScheduleExecuteService 代替
     eviction-interval-timer-in-ms: 30000
-    # 多级缓存 默认是true  register readWriteCacheMap readOnlyCacheMap  三级缓存  注
+    # 多级缓存 默认是true  register ReadWriteCacheMap readOnlyCacheMap  三级缓存  注
     # ReadWriteMap->ReadOnly 是一个定时任务  定时的把readWriteMap的数据拿到ReadOnly
     # ReadWriteCacheMap 里面的数据会在新注册的数据进register的时候失效
     # 基于内存的 ConcurrentMap
     use-read-only-response-cache: false # 默认是true 设置为false 直接从readWriteCacheMap里面读
-    # 三级缓存 从二级缓存里面取数据的时候  默认是30秒  可以设置为1秒  提升可用服务的速度
-    response-cache-update-interval-ms: 1000
+    # Eureka A server 会从Eureka B里面拉取C服务 然后后来又来个D服务注册到B A 服务里面没有，B会推送服务到A里面
+    # 怎么测算EurekaServer 能承受多少的访问量
+    #  20个服务   不调的情况下 心跳30秒 每个服务部署5个 100个
+    #  100要像server 注册 1分钟两次  200次   每个服务拉取30秒拉取注册缓存一次 一个小时是28*2万的56万的访问量
+    # Eureka 0.1秒处理 一万次的拉取 1秒钟可以拉取10万次  降低100倍 1秒也能承受1000次
+    response-cache-update-interval-ms: 1000 # 三级缓存 从二级缓存里面取数据的时候  默认是30秒  可以设置为1秒  提升可用服务的速度
 
   instance:
     hostname: 192.168.72.80

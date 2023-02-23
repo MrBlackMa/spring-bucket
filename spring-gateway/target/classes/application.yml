@@ -3,16 +3,22 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true  #å¼€å¯ ä»eurekaé‡Œé¢æ‹‰å–æ³¨å†Œ
+          enabled: true  #¿ªÆô ´ÓeurekaÀïÃæÀ­È¡×¢²á
       routes:
         - id: dso-one
           predicates:
-            - Path=/dpOne/**    #é…ç½®æ–­è¨€ è·¯å¾„
-          uri: lb://dpOne #é…ç½® è´Ÿè½½å‡è¡¡ è°ƒå–æœåŠ¡åä¸º dispatcher_one
+            - Path=/dpOne/**    #ÅäÖÃ¶ÏÑÔ Â·¾¶
+          uri: lb://dpOne #ÅäÖÃ ¸ºÔØ¾ùºâ µ÷È¡·şÎñÃûÎª dispatcher_one
           filters:
-            - StripPrefix=1  #çœç•¥path--dso-one
+            - StripPrefix=1  #Ê¡ÂÔpath--dso-one
   application:
     name: myGateWay
+
+# ÅäºÏ×Ô¶¨Òå¸ºÔØ¾ùºâ
+dpOne:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.malixi.springgateway.springgateway.custom.MyRule
+
 eureka:
   client:
     service-url:

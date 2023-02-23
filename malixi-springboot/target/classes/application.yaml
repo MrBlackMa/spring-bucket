@@ -1,10 +1,10 @@
-spring:     # é…ç½®ä¸åŒçš„ç¯å¢ƒå¯åŠ¨
-  #å¼€å¯å¥åº·ä¸ŠæŠ¥
+spring:     # ÅäÖÃ²»Í¬µÄ»·¾³Æô¶¯
+  #¿ªÆô½¡¿µÉÏ±¨
   boot:
     admin:
       client:
         url: http://192.168.72.80:8888
-  #é…ç½®é“¾è·¯è¿½è¸ª
+  #ÅäÖÃÁ´Â·×·×Ù
   zipkin:
     base-url: http://192.168.72.80:9411
   sleuth:
@@ -12,36 +12,36 @@ spring:     # é…ç½®ä¸åŒçš„ç¯å¢ƒå¯åŠ¨
        rate: 1
 
   application:
-      #name: service1 # é…ç½®æœåŠ¡åç§°
-      name: service # é…ç½®æœåŠ¡åç§° é…ç½®è´Ÿè½½å‡è¡¡
+      #name: service1 # ÅäÖÃ·şÎñÃû³Æ
+      name: service # ÅäÖÃ·şÎñÃû³Æ ÅäÖÃ¸ºÔØ¾ùºâ
   profiles:
     active: dev
   messages:
-    basename: i18n/login  # é…ç½®i18n
+    basename: i18n/login  # ÅäÖÃi18n
 
 
 eureka:
   client:
     service-url:
       defaultZone: http://192.168.72.81:8000/eureka/ #z
-      # å¯ä»¥ä¸ŠæŠ¥æœåŠ¡çœŸå®çš„å¥åº·çŠ¶æ€
+      # ¿ÉÒÔÉÏ±¨·şÎñÕæÊµµÄ½¡¿µ×´Ì¬
     healthcheck:
       enabled: true
 #  instance:
-#    #æœ€åä¸€æ¬¡å¿ƒè·³æ—¶é—´åleaseExpirationDurationInSecondsç§’å°±è®¤ä¸ºæ˜¯ä¸‹çº¿äº†ï¼Œé»˜è®¤æ˜¯90ç§’
+#    #×îºóÒ»´ÎĞÄÌøÊ±¼äºóleaseExpirationDurationInSecondsÃë¾ÍÈÏÎªÊÇÏÂÏßÁË£¬Ä¬ÈÏÊÇ90Ãë
 #    lease-expiration-duration-in-seconds: 6
-#    #å¿ƒè·³é—´éš”æ—¶é—´,é»˜è®¤æ˜¯30ç§’
+#    #ĞÄÌø¼ä¸ôÊ±¼ä,Ä¬ÈÏÊÇ30Ãë
 #    lease-renewal-interval-in-seconds: 3
 management:
 
   endpoint:
-    #ä¸ŠæŠ¥å¥åº·çŠ¶å†µ
+    #ÉÏ±¨½¡¿µ×´¿ö
     health:
       show-details: always
-    #å¯ä»¥è¿œç¨‹å…³é—­æœåŠ¡èŠ‚ç‚¹
+    #¿ÉÒÔÔ¶³Ì¹Ø±Õ·şÎñ½Úµã
     shutdown:
       enabled: true
-  #å¼€å¯æ‰€æœ‰ç«¯ç‚¹
+  #¿ªÆôËùÓĞ¶Ëµã
   endpoints:
     web:
       exposure:

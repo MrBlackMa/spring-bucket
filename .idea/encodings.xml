@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ali-sentinel/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-jar-one/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dispatcher_one/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dispatcher_two/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lcn-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lcn-pay/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lcn-tm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/malixi-springboot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-spring-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-spring-admin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-zuul/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my-zuul2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-pay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-redis-cluster/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-session-redis-boot37/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-shardingjdbc/src/main/java" charset="UTF-8" />
   </component>

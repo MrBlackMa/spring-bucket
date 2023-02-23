@@ -2,26 +2,39 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-shardingjdbc" />
-        <module name="malixi-springboot" />
-        <module name="api-jar-one" />
-        <module name="my-zuul" />
+        <module name="ali-sentinel" />
         <module name="spring-gateway" />
-        <module name="service2" />
+        <module name="lcn-pay" />
         <module name="spring-session-redis-boot37" />
         <module name="eureka-server (1)" />
         <module name="eureka-server2" />
-        <module name="eureka-server2 (1)" />
+        <module name="eureka-server2 (2)" />
+        <module name="seata-two" />
+        <module name="service-order" />
         <module name="eureka-server" />
         <module name="my-spring-admin" />
         <module name="dispatcher_two" />
+        <module name="my-zuul2" />
+        <module name="sentinel-gateway" />
+        <module name="lcn-tm" />
+        <module name="lcn-order" />
+        <module name="spring-shardingjdbc" />
+        <module name="seata-one" />
+        <module name="malixi-springboot" />
+        <module name="api-jar-one" />
+        <module name="my-zuul" />
+        <module name="service2" />
+        <module name="eureka-server2 (1)" />
+        <module name="TheInterview" />
+        <module name="spring-redis-cluster" />
+        <module name="service-pay" />
         <module name="JWT-1" />
         <module name="dispatcher_one" />
-        <module name="my-zuul2" />
         <module name="shareding-jdbc-nospring" />
       </profile>
     </annotationProcessing>
@@ -35,6 +48,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ali-sentinel" options="-parameters" />
       <module name="api-jar-one" options="-parameters" />
       <module name="dispatcher_one" options="-parameters" />
       <module name="dispatcher_two" options="-parameters" />
@@ -42,13 +56,22 @@
       <module name="eureka-server (1)" options="-parameters" />
       <module name="eureka-server2" options="-parameters" />
       <module name="eureka-server2 (1)" options="-parameters" />
+      <module name="eureka-server2 (2)" options="-parameters" />
+      <module name="lcn-order" options="-parameters" />
+      <module name="lcn-pay" options="-parameters" />
+      <module name="lcn-tm" options="-parameters" />
       <module name="malixi-springboot" options="-parameters" />
       <module name="my-spring-admin" options="-parameters" />
       <module name="my-zuul" options="-parameters" />
       <module name="my-zuul2" options="-parameters" />
+      <module name="seata-one" options="-parameters" />
+      <module name="sentinel-gateway" options="-parameters" />
+      <module name="service-order" options="-parameters" />
+      <module name="service-pay" options="-parameters" />
       <module name="service2" options="-parameters" />
       <module name="session-redis" options="-parameters" />
       <module name="spring-gateway" options="-parameters" />
+      <module name="spring-redis-cluster" options="-parameters" />
       <module name="spring-session-redis" options="-parameters" />
       <module name="spring-session-redis-boot37" options="-parameters" />
       <module name="spring-shardingjdbc" options="-parameters" />
